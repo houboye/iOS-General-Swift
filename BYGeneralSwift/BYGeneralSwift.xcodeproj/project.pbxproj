@@ -18,6 +18,14 @@
 		A2359A5A275F0C2600F77A26 /* BYGeneralSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A59275F0C2600F77A26 /* BYGeneralSwiftUITests.swift */; };
 		A2359A5C275F0C2600F77A26 /* BYGeneralSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A5B275F0C2600F77A26 /* BYGeneralSwiftUITestsLaunchTests.swift */; };
 		A2359B28275F33E600F77A26 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359B27275F33E600F77A26 /* Optional+Extension.swift */; };
+		A2C291A8275F646D00A0B5DB /* TimerHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291A4275F646D00A0B5DB /* TimerHolder.swift */; };
+		A2C291A9275F646D00A0B5DB /* NavigationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291A5275F646D00A0B5DB /* NavigationHandler.swift */; };
+		A2C291AA275F646D00A0B5DB /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291A6275F646D00A0B5DB /* Tools.swift */; };
+		A2C291AB275F646D00A0B5DB /* NavigationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291A7275F646D00A0B5DB /* NavigationAnimator.swift */; };
+		A2C291AF275F649A00A0B5DB /* KeyboardEventObserverProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291AD275F649A00A0B5DB /* KeyboardEventObserverProtocol.swift */; };
+		A2C291B0275F649A00A0B5DB /* ApplicationEventSubscriberProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291AE275F649A00A0B5DB /* ApplicationEventSubscriberProtocol.swift */; };
+		A2C291B4275F64C600A0B5DB /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291B3275F64C600A0B5DB /* BaseService.swift */; };
+		A2C291B8275F6ECF00A0B5DB /* launchImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C291B7275F6ECF00A0B5DB /* launchImage.jpg */; };
 		BE5022C06BA3FEC3CDEC51E1 /* Pods_BYGeneralSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44793906F9573C957D5D16D3 /* Pods_BYGeneralSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +64,14 @@
 		A2359A59275F0C2600F77A26 /* BYGeneralSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYGeneralSwiftUITests.swift; sourceTree = "<group>"; };
 		A2359A5B275F0C2600F77A26 /* BYGeneralSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYGeneralSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A2359B27275F33E600F77A26 /* Optional+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
+		A2C291A4275F646D00A0B5DB /* TimerHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerHolder.swift; sourceTree = "<group>"; };
+		A2C291A5275F646D00A0B5DB /* NavigationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationHandler.swift; sourceTree = "<group>"; };
+		A2C291A6275F646D00A0B5DB /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		A2C291A7275F646D00A0B5DB /* NavigationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationAnimator.swift; sourceTree = "<group>"; };
+		A2C291AD275F649A00A0B5DB /* KeyboardEventObserverProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardEventObserverProtocol.swift; sourceTree = "<group>"; };
+		A2C291AE275F649A00A0B5DB /* ApplicationEventSubscriberProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationEventSubscriberProtocol.swift; sourceTree = "<group>"; };
+		A2C291B3275F64C600A0B5DB /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		A2C291B7275F6ECF00A0B5DB /* launchImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launchImage.jpg; sourceTree = "<group>"; };
 		B59E0C565FF9452B81DA052B /* Pods-BYGeneralSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BYGeneralSwift.debug.xcconfig"; path = "Target Support Files/Pods-BYGeneralSwift/Pods-BYGeneralSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,10 +137,14 @@
 				A2359A35275F0C2400F77A26 /* AppDelegate.swift */,
 				A2359A37275F0C2400F77A26 /* SceneDelegate.swift */,
 				A2359A39275F0C2400F77A26 /* ViewController.swift */,
+				A2C291B1275F64B000A0B5DB /* Base */,
+				A2C291AC275F648C00A0B5DB /* EventSubscriber */,
+				A2C291A3275F641000A0B5DB /* Tools */,
 				A2359B26275F33C800F77A26 /* Extension */,
 				A2359A3B275F0C2400F77A26 /* Main.storyboard */,
 				A2359A41275F0C2600F77A26 /* Assets.xcassets */,
 				A2359A43275F0C2600F77A26 /* LaunchScreen.storyboard */,
+				A2C291B7275F6ECF00A0B5DB /* launchImage.jpg */,
 				A2359A46275F0C2600F77A26 /* Info.plist */,
 				A2359A3E275F0C2400F77A26 /* BYGeneralSwift.xcdatamodeld */,
 			);
@@ -154,6 +174,42 @@
 				A2359B27275F33E600F77A26 /* Optional+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		A2C291A3275F641000A0B5DB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A2C291A7275F646D00A0B5DB /* NavigationAnimator.swift */,
+				A2C291A5275F646D00A0B5DB /* NavigationHandler.swift */,
+				A2C291A4275F646D00A0B5DB /* TimerHolder.swift */,
+				A2C291A6275F646D00A0B5DB /* Tools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A2C291AC275F648C00A0B5DB /* EventSubscriber */ = {
+			isa = PBXGroup;
+			children = (
+				A2C291AE275F649A00A0B5DB /* ApplicationEventSubscriberProtocol.swift */,
+				A2C291AD275F649A00A0B5DB /* KeyboardEventObserverProtocol.swift */,
+			);
+			path = EventSubscriber;
+			sourceTree = "<group>";
+		};
+		A2C291B1275F64B000A0B5DB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A2C291B2275F64B900A0B5DB /* Service */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A2C291B2275F64B900A0B5DB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A2C291B3275F64C600A0B5DB /* BaseService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		E8BBA444E0C9DAABA3998618 /* Pods */ = {
@@ -271,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C291B8275F6ECF00A0B5DB /* launchImage.jpg in Resources */,
 				A2359A45275F0C2600F77A26 /* LaunchScreen.storyboard in Resources */,
 				A2359A42275F0C2600F77A26 /* Assets.xcassets in Resources */,
 				A2359A3D275F0C2400F77A26 /* Main.storyboard in Resources */,
@@ -342,9 +399,16 @@
 			files = (
 				A2359A3A275F0C2400F77A26 /* ViewController.swift in Sources */,
 				A2359A40275F0C2400F77A26 /* BYGeneralSwift.xcdatamodeld in Sources */,
+				A2C291A9275F646D00A0B5DB /* NavigationHandler.swift in Sources */,
 				A2359B28275F33E600F77A26 /* Optional+Extension.swift in Sources */,
+				A2C291A8275F646D00A0B5DB /* TimerHolder.swift in Sources */,
+				A2C291B0275F649A00A0B5DB /* ApplicationEventSubscriberProtocol.swift in Sources */,
+				A2C291AF275F649A00A0B5DB /* KeyboardEventObserverProtocol.swift in Sources */,
 				A2359A36275F0C2400F77A26 /* AppDelegate.swift in Sources */,
+				A2C291B4275F64C600A0B5DB /* BaseService.swift in Sources */,
 				A2359A38275F0C2400F77A26 /* SceneDelegate.swift in Sources */,
+				A2C291AA275F646D00A0B5DB /* Tools.swift in Sources */,
+				A2C291AB275F646D00A0B5DB /* NavigationAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
