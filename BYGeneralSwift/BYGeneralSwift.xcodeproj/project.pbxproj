@@ -26,6 +26,11 @@
 		A2C291B0275F649A00A0B5DB /* ApplicationEventSubscriberProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291AE275F649A00A0B5DB /* ApplicationEventSubscriberProtocol.swift */; };
 		A2C291B4275F64C600A0B5DB /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291B3275F64C600A0B5DB /* BaseService.swift */; };
 		A2C291B8275F6ECF00A0B5DB /* launchImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C291B7275F6ECF00A0B5DB /* launchImage.jpg */; };
+		A2C291BC2760A38900A0B5DB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291BB2760A38900A0B5DB /* RootViewController.swift */; };
+		A2C291C02760A57800A0B5DB /* DemosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291BF2760A57800A0B5DB /* DemosViewController.swift */; };
+		A2C291C22760A59A00A0B5DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291C12760A59A00A0B5DB /* HomeViewController.swift */; };
+		A2C291C52760AFE900A0B5DB /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291C42760AFE900A0B5DB /* BaseNavigationController.swift */; };
+		A2C291C82760B10600A0B5DB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291C72760B10600A0B5DB /* BaseViewController.swift */; };
 		BE5022C06BA3FEC3CDEC51E1 /* Pods_BYGeneralSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44793906F9573C957D5D16D3 /* Pods_BYGeneralSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +77,11 @@
 		A2C291AE275F649A00A0B5DB /* ApplicationEventSubscriberProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationEventSubscriberProtocol.swift; sourceTree = "<group>"; };
 		A2C291B3275F64C600A0B5DB /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		A2C291B7275F6ECF00A0B5DB /* launchImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launchImage.jpg; sourceTree = "<group>"; };
+		A2C291BB2760A38900A0B5DB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		A2C291BF2760A57800A0B5DB /* DemosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemosViewController.swift; sourceTree = "<group>"; };
+		A2C291C12760A59A00A0B5DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A2C291C42760AFE900A0B5DB /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		A2C291C72760B10600A0B5DB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B59E0C565FF9452B81DA052B /* Pods-BYGeneralSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BYGeneralSwift.debug.xcconfig"; path = "Target Support Files/Pods-BYGeneralSwift/Pods-BYGeneralSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +147,7 @@
 				A2359A35275F0C2400F77A26 /* AppDelegate.swift */,
 				A2359A37275F0C2400F77A26 /* SceneDelegate.swift */,
 				A2359A39275F0C2400F77A26 /* ViewController.swift */,
+				A2C291B92760A2DF00A0B5DB /* Main */,
 				A2C291B1275F64B000A0B5DB /* Base */,
 				A2C291AC275F648C00A0B5DB /* EventSubscriber */,
 				A2C291A3275F641000A0B5DB /* Tools */,
@@ -199,6 +210,8 @@
 		A2C291B1275F64B000A0B5DB /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A2C291C62760B0ED00A0B5DB /* BaseViewController */,
+				A2C291C32760AFC400A0B5DB /* Navi */,
 				A2C291B2275F64B900A0B5DB /* Service */,
 			);
 			path = Base;
@@ -210,6 +223,56 @@
 				A2C291B3275F64C600A0B5DB /* BaseService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		A2C291B92760A2DF00A0B5DB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A2C291BE2760A3F000A0B5DB /* Home */,
+				A2C291BD2760A3E600A0B5DB /* Demos */,
+				A2C291BA2760A2EB00A0B5DB /* Root */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A2C291BA2760A2EB00A0B5DB /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A2C291BB2760A38900A0B5DB /* RootViewController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		A2C291BD2760A3E600A0B5DB /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				A2C291BF2760A57800A0B5DB /* DemosViewController.swift */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		A2C291BE2760A3F000A0B5DB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A2C291C12760A59A00A0B5DB /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A2C291C32760AFC400A0B5DB /* Navi */ = {
+			isa = PBXGroup;
+			children = (
+				A2C291C42760AFE900A0B5DB /* BaseNavigationController.swift */,
+			);
+			path = Navi;
+			sourceTree = "<group>";
+		};
+		A2C291C62760B0ED00A0B5DB /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A2C291C72760B10600A0B5DB /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
 			sourceTree = "<group>";
 		};
 		E8BBA444E0C9DAABA3998618 /* Pods */ = {
@@ -398,10 +461,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2359A3A275F0C2400F77A26 /* ViewController.swift in Sources */,
+				A2C291C02760A57800A0B5DB /* DemosViewController.swift in Sources */,
 				A2359A40275F0C2400F77A26 /* BYGeneralSwift.xcdatamodeld in Sources */,
 				A2C291A9275F646D00A0B5DB /* NavigationHandler.swift in Sources */,
 				A2359B28275F33E600F77A26 /* Optional+Extension.swift in Sources */,
+				A2C291C22760A59A00A0B5DB /* HomeViewController.swift in Sources */,
+				A2C291BC2760A38900A0B5DB /* RootViewController.swift in Sources */,
+				A2C291C82760B10600A0B5DB /* BaseViewController.swift in Sources */,
 				A2C291A8275F646D00A0B5DB /* TimerHolder.swift in Sources */,
+				A2C291C52760AFE900A0B5DB /* BaseNavigationController.swift in Sources */,
 				A2C291B0275F649A00A0B5DB /* ApplicationEventSubscriberProtocol.swift in Sources */,
 				A2C291AF275F649A00A0B5DB /* KeyboardEventObserverProtocol.swift in Sources */,
 				A2359A36275F0C2400F77A26 /* AppDelegate.swift in Sources */,
