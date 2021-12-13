@@ -21,7 +21,7 @@ fileprivate let TabBarCount = 2
 
 class RootViewController: UITabBarController {
 
-    private(set) var navigationHandlers = [NavigationHandler]()
+//    private(set) var navigationHandlers = [NavigationHandler]()
 
     func instance() -> RootViewController? {
         let delegate = UIApplication.shared.delegate
@@ -41,7 +41,7 @@ class RootViewController: UITabBarController {
     }
     
     private func setupSubNavigationController() {
-        let handlerArray = tabbars().compactMap { (obj) -> NavigationHandler in
+        tabbars().forEach { obj in
             let type = obj
             let item = self.vcInfo(for: type)
             let vcName = item[TabbarVC] as! String
@@ -52,13 +52,26 @@ class RootViewController: UITabBarController {
             let clazz = NSClassFromString(vcName) as! UIViewController.Type
             let vc = clazz.init()
             
-            let nc = setupChildViewController(vc, title: title, image: imageName, selectedImage: imageSelected)
-            let handler = NavigationHandler(navigationController: nc)
-            nc.delegate = handler
-            
-            return handler
+            _ = setupChildViewController(vc, title: title, image: imageName, selectedImage: imageSelected)
         }
-        navigationHandlers = handlerArray
+//        let handlerArray = tabbars().compactMap { (obj) -> NavigationHandler in
+//            let type = obj
+//            let item = self.vcInfo(for: type)
+//            let vcName = item[TabbarVC] as! String
+//            let title = item[TabbarTitle] as! String
+//            let imageName = item[TabbarImage] as! String
+//            let imageSelected = item[TabbarSelectedImage] as! String
+//
+//            let clazz = NSClassFromString(vcName) as! UIViewController.Type
+//            let vc = clazz.init()
+//
+//            let nc = setupChildViewController(vc, title: title, image: imageName, selectedImage: imageSelected)
+//            let handler = NavigationHandler(navigationController: nc)
+//            nc.delegate = handler
+//
+//            return handler
+//        }
+//        navigationHandlers = handlerArray
     }
     
     private func tabbars() -> [TabBarType] {
