@@ -129,12 +129,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A2263484276722EB00DF44A4 /* SubVCs */ = {
+		A2263484276722EB00DF44A4 /* OffScreenRendering */ = {
 			isa = PBXGroup;
 			children = (
 				A22634852767231E00DF44A4 /* OffScreenRenderingViewController.swift */,
 			);
-			path = SubVCs;
+			path = OffScreenRendering;
 			sourceTree = "<group>";
 		};
 		A2359A29275F0C2300F77A26 = {
@@ -269,7 +269,7 @@
 				A22634822767224800DF44A4 /* DemosViewController+Handler.swift */,
 				A226347C27632B1A00DF44A4 /* DemosTableViewCell.swift */,
 				A22634802763393E00DF44A4 /* DemoItem.swift */,
-				A2263484276722EB00DF44A4 /* SubVCs */,
+				A2263484276722EB00DF44A4 /* OffScreenRendering */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
