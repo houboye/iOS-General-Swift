@@ -30,7 +30,7 @@ extension Optional {
     }
     
     /// 返回可选值或者 `else` 闭包返回的值
-    // 例如. optional.or(else: {
+    /// 例如. optional.or(else: {
     /// ... do a lot of stuff
     /// })
     func or(else: () -> Wrapped) -> Wrapped {
