@@ -12,7 +12,6 @@
 		A22634812763393E00DF44A4 /* DemoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22634802763393E00DF44A4 /* DemoItem.swift */; };
 		A22634832767224800DF44A4 /* DemosViewController+Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22634822767224800DF44A4 /* DemosViewController+Handler.swift */; };
 		A22634862767231E00DF44A4 /* OffScreenRenderingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22634852767231E00DF44A4 /* OffScreenRenderingViewController.swift */; };
-		A226348A2769DC0C00DF44A4 /* BaseNavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22634892769DC0C00DF44A4 /* BaseNavigationController+Extension.swift */; };
 		A2359A36275F0C2400F77A26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A35275F0C2400F77A26 /* AppDelegate.swift */; };
 		A2359A38275F0C2400F77A26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A37275F0C2400F77A26 /* SceneDelegate.swift */; };
 		A2359A3A275F0C2400F77A26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A39275F0C2400F77A26 /* ViewController.swift */; };
@@ -35,8 +34,6 @@
 		A2C291BC2760A38900A0B5DB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291BB2760A38900A0B5DB /* RootViewController.swift */; };
 		A2C291C02760A57800A0B5DB /* DemosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291BF2760A57800A0B5DB /* DemosViewController.swift */; };
 		A2C291C22760A59A00A0B5DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291C12760A59A00A0B5DB /* HomeViewController.swift */; };
-		A2C291C52760AFE900A0B5DB /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291C42760AFE900A0B5DB /* BaseNavigationController.swift */; };
-		A2C291C82760B10600A0B5DB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291C72760B10600A0B5DB /* BaseViewController.swift */; };
 		BE5022C06BA3FEC3CDEC51E1 /* Pods_BYGeneralSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44793906F9573C957D5D16D3 /* Pods_BYGeneralSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +62,6 @@
 		A22634802763393E00DF44A4 /* DemoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoItem.swift; sourceTree = "<group>"; };
 		A22634822767224800DF44A4 /* DemosViewController+Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DemosViewController+Handler.swift"; sourceTree = "<group>"; };
 		A22634852767231E00DF44A4 /* OffScreenRenderingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffScreenRenderingViewController.swift; sourceTree = "<group>"; };
-		A22634892769DC0C00DF44A4 /* BaseNavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseNavigationController+Extension.swift"; sourceTree = "<group>"; };
 		A2359A32275F0C2400F77A26 /* BYGeneralSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BYGeneralSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2359A35275F0C2400F77A26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2359A37275F0C2400F77A26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,8 +88,6 @@
 		A2C291BB2760A38900A0B5DB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		A2C291BF2760A57800A0B5DB /* DemosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemosViewController.swift; sourceTree = "<group>"; };
 		A2C291C12760A59A00A0B5DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		A2C291C42760AFE900A0B5DB /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
-		A2C291C72760B10600A0B5DB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B59E0C565FF9452B81DA052B /* Pods-BYGeneralSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BYGeneralSwift.debug.xcconfig"; path = "Target Support Files/Pods-BYGeneralSwift/Pods-BYGeneralSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,8 +225,6 @@
 		A2C291B1275F64B000A0B5DB /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				A2C291C62760B0ED00A0B5DB /* BaseViewController */,
-				A2C291C32760AFC400A0B5DB /* Navi */,
 				A2C291B2275F64B900A0B5DB /* Service */,
 			);
 			path = Base;
@@ -282,23 +274,6 @@
 				A2C291C12760A59A00A0B5DB /* HomeViewController.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		A2C291C32760AFC400A0B5DB /* Navi */ = {
-			isa = PBXGroup;
-			children = (
-				A2C291C42760AFE900A0B5DB /* BaseNavigationController.swift */,
-				A22634892769DC0C00DF44A4 /* BaseNavigationController+Extension.swift */,
-			);
-			path = Navi;
-			sourceTree = "<group>";
-		};
-		A2C291C62760B0ED00A0B5DB /* BaseViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A2C291C72760B10600A0B5DB /* BaseViewController.swift */,
-			);
-			path = BaseViewController;
 			sourceTree = "<group>";
 		};
 		E8BBA444E0C9DAABA3998618 /* Pods */ = {
@@ -496,10 +471,7 @@
 				A22634832767224800DF44A4 /* DemosViewController+Handler.swift in Sources */,
 				A2C291C22760A59A00A0B5DB /* HomeViewController.swift in Sources */,
 				A2C291BC2760A38900A0B5DB /* RootViewController.swift in Sources */,
-				A2C291C82760B10600A0B5DB /* BaseViewController.swift in Sources */,
-				A226348A2769DC0C00DF44A4 /* BaseNavigationController+Extension.swift in Sources */,
 				A2C291A8275F646D00A0B5DB /* TimerHolder.swift in Sources */,
-				A2C291C52760AFE900A0B5DB /* BaseNavigationController.swift in Sources */,
 				A2C291B0275F649A00A0B5DB /* ApplicationEventSubscriberProtocol.swift in Sources */,
 				A2C291AF275F649A00A0B5DB /* KeyboardEventObserverProtocol.swift in Sources */,
 				A2359A36275F0C2400F77A26 /* AppDelegate.swift in Sources */,

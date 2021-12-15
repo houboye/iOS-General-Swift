@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import BaseControllers
 
 enum TabBarType: Int {
     case Home = 0
@@ -84,7 +85,7 @@ class RootViewController: UITabBarController {
     
     private func setupChildViewController(_ viewController: UIViewController, title: String, image: String, selectedImage: String) -> UINavigationController {
         viewController.title = title
-        let nc = BaseNavigationController(rootViewController: viewController)
+        let nc = NavigationController(rootViewController: viewController)
         
         var bgImage = UIImage(named: image)
         bgImage = bgImage?.withRenderingMode(.alwaysOriginal)

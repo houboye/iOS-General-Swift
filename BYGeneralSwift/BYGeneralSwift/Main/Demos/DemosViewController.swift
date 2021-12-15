@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import BaseControllers
 
 class DemosViewController: BaseViewController {
     private let tableView = UITableView(frame: CGRect.zero, style: .grouped)

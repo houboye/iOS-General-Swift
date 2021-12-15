@@ -9,7 +9,7 @@ import UIKit
 /*
  1、关于返回按钮，如果UI只是想要替换系统的icon，需提供合适尺寸的
  */
-public class BaseNavigationController: UINavigationController {
+public class NavigationController: UINavigationController {
     public enum NavigationBackButtonStyle {
         case style
         case style1
@@ -49,7 +49,7 @@ public class BaseNavigationController: UINavigationController {
     }
 }
 
-extension BaseNavigationController: UINavigationBarDelegate {
+extension NavigationController: UINavigationBarDelegate {
     public func navigationBar(_ navigationBar: UINavigationBar, shouldPush item: UINavigationItem) -> Bool {
         let backButton = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
         item.backBarButtonItem = backButton

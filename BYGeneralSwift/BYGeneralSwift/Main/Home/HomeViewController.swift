@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import BaseControllers
 
 class HomeViewController: BaseViewController {
 

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import BaseControllers
 
 extension DemosViewController {
     func handledidSelectRow(_ item: DemoItem) {
