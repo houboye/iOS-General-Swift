@@ -9,8 +9,8 @@ import UIKit
 /*
  1、关于返回按钮，如果UI只是想要替换系统的icon，需提供合适尺寸的
  */
-class BaseNavigationController: UINavigationController {
-    enum NavigationBackButtonStyle {
+public class BaseNavigationController: UINavigationController {
+    public enum NavigationBackButtonStyle {
         case style
         case style1
         case style2
@@ -30,7 +30,7 @@ class BaseNavigationController: UINavigationController {
     // 默认的返回按钮样式
     public var defaultNavigationBackButtonStyle = NavigationBackButtonStyle.style2
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         let backImage = defaultNavigationBackButtonStyle.image
@@ -50,7 +50,7 @@ class BaseNavigationController: UINavigationController {
 }
 
 extension BaseNavigationController: UINavigationBarDelegate {
-    func navigationBar(_ navigationBar: UINavigationBar, shouldPush item: UINavigationItem) -> Bool {
+    public func navigationBar(_ navigationBar: UINavigationBar, shouldPush item: UINavigationItem) -> Bool {
         let backButton = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
         item.backBarButtonItem = backButton
         
@@ -61,20 +61,20 @@ extension BaseNavigationController: UINavigationBarDelegate {
     }
     
     // 此方法不靠谱，只会在点击返回按钮的时候触发，手势返回不会触发
-    func navigationBar(_ navigationBar: UINavigationBar, shouldPop item: UINavigationItem) -> Bool {
+    public func navigationBar(_ navigationBar: UINavigationBar, shouldPop item: UINavigationItem) -> Bool {
         debugPrint("------------shouldPop-------------")
         debugPrint(topViewController as Any)
         debugPrint("------------shouldPop-------------")
         return true
     }
     
-    func navigationBar(_ navigationBar: UINavigationBar, didPush item: UINavigationItem) {
+    public func navigationBar(_ navigationBar: UINavigationBar, didPush item: UINavigationItem) {
         debugPrint("------------didPush-------------")
         debugPrint(topViewController as Any)
         debugPrint("------------didPush-------------")
     }
     
-    func navigationBar(_ navigationBar: UINavigationBar, didPop item: UINavigationItem) {
+    public func navigationBar(_ navigationBar: UINavigationBar, didPop item: UINavigationItem) {
         debugPrint("------------didPop-------------")
         debugPrint(topViewController as Any)
         debugPrint("------------didPop-------------")

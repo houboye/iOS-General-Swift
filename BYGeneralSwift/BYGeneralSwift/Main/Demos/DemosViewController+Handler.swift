@@ -12,8 +12,7 @@ extension DemosViewController {
         switch item.demoType {
         case .offScreenRendering:
             let viewController = OffScreenRenderingViewController()
-            viewController.hidesBottomBarWhenPushed = true
-            navigationController?.pushViewController(viewController, animated: true)
+            navigationController?.push(viewController: viewController)
         }
     }
 }
