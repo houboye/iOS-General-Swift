@@ -32,16 +32,27 @@ class BaseNavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let backImage = defaultNavigationBackButtonStyle.image
-        navigationBar.backIndicatorImage = backImage?.withRenderingMode(.alwaysOriginal)
-        navigationBar.backIndicatorTransitionMaskImage = backImage?.withRenderingMode(.alwaysOriginal)
+        if #available(iOS 15.0, *) {
+            let appearance = UINavigationBarAppearance.init()
+            appearance.setBackIndicatorImage(backImage?.withRenderingMode(.alwaysOriginal), transitionMaskImage: backImage?.withRenderingMode(.alwaysOriginal))
+            
+            navigationBar.standardAppearance = appearance
+            navigationBar.scrollEdgeAppearance = appearance
+        } else {
+            navigationBar.backIndicatorImage = backImage?.withRenderingMode(.alwaysOriginal)
+            navigationBar.backIndicatorTransitionMaskImage = backImage?.withRenderingMode(.alwaysOriginal)
+        }
+        navigationBar.tintColor = UIColor.systemBlue
+        navigationBar.barStyle = .default
     }
 }
 
 extension BaseNavigationController: UINavigationBarDelegate {
     func navigationBar(_ navigationBar: UINavigationBar, shouldPush item: UINavigationItem) -> Bool {
         let backButton = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
-        navigationItem.backBarButtonItem = backButton
+        item.backBarButtonItem = backButton
         
         debugPrint("------------shouldPush-------------")
         debugPrint(topViewController as Any)
