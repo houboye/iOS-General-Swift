@@ -18,11 +18,11 @@ public class NavigationController: UINavigationController {
         var image: UIImage? {
             switch self {
             case .style:
-                return UIImage(named: "ic_back")
+                return BaseControllersBundle.image("ic_back")
             case .style1:
-                return UIImage(named: "ic_back1")
+                return BaseControllersBundle.image("ic_back1")
             case .style2:
-                return UIImage(named: "ic_back2")
+                return BaseControllersBundle.image("ic_back2")
             }
         }
     }

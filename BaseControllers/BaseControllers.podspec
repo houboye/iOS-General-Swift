@@ -17,7 +17,12 @@ Pod::Spec.new do |spec|
 
     spec.source       = { :git => "", :tag => "#{spec.version}" }
 
-    spec.source_files  = "BaseControllers", "BaseControllers/**/*.swift"
+    spec.source_files  = "BaseControllers", "BaseControllers/Classes/**/*.swift"
+
+    spec.resources = ["BaseControllers/Resource/**/*"]
+    spec.resource_bundles = {
+      "BaseControllersResources" => ["BaseControllers/Assets/Main/*.xcassets"]
+    }
     
     spec.static_framework = true
 end
