@@ -24,5 +24,6 @@ Pod::Spec.new do |spec|
       "BaseControllersResources" => ["BaseControllers/Assets/Main/*.xcassets"]
     }
     
+    spec.dependency "GeneralTools"
     spec.static_framework = true
 end

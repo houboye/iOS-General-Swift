@@ -10,5 +10,6 @@ target 'BYGeneralSwift' do
     pod 'SwiftState'
     pod 'Moya', '~> 15.0'
     
+    pod "GeneralTools", :path => "../GeneralTools"
     pod "BaseControllers", :path => "../BaseControllers"
 end

@@ -22,7 +22,6 @@
 		A2359A50275F0C2600F77A26 /* BYGeneralSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A4F275F0C2600F77A26 /* BYGeneralSwiftTests.swift */; };
 		A2359A5A275F0C2600F77A26 /* BYGeneralSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A59275F0C2600F77A26 /* BYGeneralSwiftUITests.swift */; };
 		A2359A5C275F0C2600F77A26 /* BYGeneralSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A5B275F0C2600F77A26 /* BYGeneralSwiftUITestsLaunchTests.swift */; };
-		A2359B28275F33E600F77A26 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359B27275F33E600F77A26 /* Optional+Extension.swift */; };
 		A2C291A8275F646D00A0B5DB /* TimerHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291A4275F646D00A0B5DB /* TimerHolder.swift */; };
 		A2C291A9275F646D00A0B5DB /* NavigationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291A5275F646D00A0B5DB /* NavigationHandler.swift */; };
 		A2C291AA275F646D00A0B5DB /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291A6275F646D00A0B5DB /* Tools.swift */; };
@@ -76,7 +75,6 @@
 		A2359A55275F0C2600F77A26 /* BYGeneralSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BYGeneralSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2359A59275F0C2600F77A26 /* BYGeneralSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYGeneralSwiftUITests.swift; sourceTree = "<group>"; };
 		A2359A5B275F0C2600F77A26 /* BYGeneralSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYGeneralSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A2359B27275F33E600F77A26 /* Optional+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
 		A2C291A4275F646D00A0B5DB /* TimerHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerHolder.swift; sourceTree = "<group>"; };
 		A2C291A5275F646D00A0B5DB /* NavigationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationHandler.swift; sourceTree = "<group>"; };
 		A2C291A6275F646D00A0B5DB /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
@@ -165,7 +163,6 @@
 				A2C291B1275F64B000A0B5DB /* Base */,
 				A2C291AC275F648C00A0B5DB /* EventSubscriber */,
 				A2C291A3275F641000A0B5DB /* Tools */,
-				A2359B26275F33C800F77A26 /* Extension */,
 				A2359A3B275F0C2400F77A26 /* Main.storyboard */,
 				A2359A41275F0C2600F77A26 /* Assets.xcassets */,
 				A2359A43275F0C2600F77A26 /* LaunchScreen.storyboard */,
@@ -191,14 +188,6 @@
 				A2359A5B275F0C2600F77A26 /* BYGeneralSwiftUITestsLaunchTests.swift */,
 			);
 			path = BYGeneralSwiftUITests;
-			sourceTree = "<group>";
-		};
-		A2359B26275F33C800F77A26 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				A2359B27275F33E600F77A26 /* Optional+Extension.swift */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		A2C291A3275F641000A0B5DB /* Tools */ = {
@@ -484,7 +473,6 @@
 				A2C291C02760A57800A0B5DB /* DemosViewController.swift in Sources */,
 				A2359A40275F0C2400F77A26 /* BYGeneralSwift.xcdatamodeld in Sources */,
 				A2C291A9275F646D00A0B5DB /* NavigationHandler.swift in Sources */,
-				A2359B28275F33E600F77A26 /* Optional+Extension.swift in Sources */,
 				A226347F2763308400DF44A4 /* Snapkit+Public.swift in Sources */,
 				A22634832767224800DF44A4 /* DemosViewController+Handler.swift in Sources */,
 				A2C291C22760A59A00A0B5DB /* HomeViewController.swift in Sources */,
