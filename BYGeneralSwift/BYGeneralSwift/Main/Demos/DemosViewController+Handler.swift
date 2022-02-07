@@ -14,6 +14,9 @@ extension DemosViewController {
         case .offScreenRendering:
             let viewController = OffScreenRenderingViewController()
             navigationController?.push(viewController: viewController)
+        case .VPN:
+            let viewController = VPNViewController()
+            navigationController?.push(viewController: viewController)
         }
     }
 }

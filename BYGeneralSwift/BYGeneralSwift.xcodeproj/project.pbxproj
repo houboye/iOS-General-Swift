@@ -22,6 +22,11 @@
 		A2359A50275F0C2600F77A26 /* BYGeneralSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A4F275F0C2600F77A26 /* BYGeneralSwiftTests.swift */; };
 		A2359A5A275F0C2600F77A26 /* BYGeneralSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A59275F0C2600F77A26 /* BYGeneralSwiftUITests.swift */; };
 		A2359A5C275F0C2600F77A26 /* BYGeneralSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A5B275F0C2600F77A26 /* BYGeneralSwiftUITestsLaunchTests.swift */; };
+		A2960A6327B0C70800EEC629 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2960A6227B0C70800EEC629 /* NetworkExtension.framework */; };
+		A2960A6927B0C98F00EEC629 /* KTM1290_1920x1080.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A2960A6627B0C98E00EEC629 /* KTM1290_1920x1080.jpeg */; };
+		A2960A6A27B0C98F00EEC629 /* image_1920x1200.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A2960A6727B0C98E00EEC629 /* image_1920x1200.jpeg */; };
+		A2960A6B27B0C98F00EEC629 /* ktm-1290-super-duke_921x518.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A2960A6827B0C98E00EEC629 /* ktm-1290-super-duke_921x518.jpeg */; };
+		A2960A6D27B0CFAB00EEC629 /* OffScreenRenderingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2960A6C27B0CFAB00EEC629 /* OffScreenRenderingCollectionCell.swift */; };
 		A2C291A8275F646D00A0B5DB /* TimerHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291A4275F646D00A0B5DB /* TimerHolder.swift */; };
 		A2C291A9275F646D00A0B5DB /* NavigationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291A5275F646D00A0B5DB /* NavigationHandler.swift */; };
 		A2C291AA275F646D00A0B5DB /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291A6275F646D00A0B5DB /* Tools.swift */; };
@@ -33,6 +38,7 @@
 		A2C291BC2760A38900A0B5DB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291BB2760A38900A0B5DB /* RootViewController.swift */; };
 		A2C291C02760A57800A0B5DB /* DemosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291BF2760A57800A0B5DB /* DemosViewController.swift */; };
 		A2C291C22760A59A00A0B5DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291C12760A59A00A0B5DB /* HomeViewController.swift */; };
+		A2C77287276C7EDE003855A3 /* VPNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C77286276C7EDE003855A3 /* VPNViewController.swift */; };
 		BE5022C06BA3FEC3CDEC51E1 /* Pods_BYGeneralSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44793906F9573C957D5D16D3 /* Pods_BYGeneralSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +81,12 @@
 		A2359A55275F0C2600F77A26 /* BYGeneralSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BYGeneralSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2359A59275F0C2600F77A26 /* BYGeneralSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYGeneralSwiftUITests.swift; sourceTree = "<group>"; };
 		A2359A5B275F0C2600F77A26 /* BYGeneralSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYGeneralSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A2960A6127B0C70800EEC629 /* BYGeneralSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BYGeneralSwift.entitlements; sourceTree = "<group>"; };
+		A2960A6227B0C70800EEC629 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		A2960A6627B0C98E00EEC629 /* KTM1290_1920x1080.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KTM1290_1920x1080.jpeg; sourceTree = "<group>"; };
+		A2960A6727B0C98E00EEC629 /* image_1920x1200.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_1920x1200.jpeg; sourceTree = "<group>"; };
+		A2960A6827B0C98E00EEC629 /* ktm-1290-super-duke_921x518.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ktm-1290-super-duke_921x518.jpeg"; sourceTree = "<group>"; };
+		A2960A6C27B0CFAB00EEC629 /* OffScreenRenderingCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffScreenRenderingCollectionCell.swift; sourceTree = "<group>"; };
 		A2C291A4275F646D00A0B5DB /* TimerHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerHolder.swift; sourceTree = "<group>"; };
 		A2C291A5275F646D00A0B5DB /* NavigationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationHandler.swift; sourceTree = "<group>"; };
 		A2C291A6275F646D00A0B5DB /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
@@ -86,6 +98,7 @@
 		A2C291BB2760A38900A0B5DB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		A2C291BF2760A57800A0B5DB /* DemosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemosViewController.swift; sourceTree = "<group>"; };
 		A2C291C12760A59A00A0B5DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A2C77286276C7EDE003855A3 /* VPNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNViewController.swift; sourceTree = "<group>"; };
 		B59E0C565FF9452B81DA052B /* Pods-BYGeneralSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BYGeneralSwift.debug.xcconfig"; path = "Target Support Files/Pods-BYGeneralSwift/Pods-BYGeneralSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE5022C06BA3FEC3CDEC51E1 /* Pods_BYGeneralSwift.framework in Frameworks */,
+				A2960A6327B0C70800EEC629 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +132,7 @@
 		491910BB8EECED5B01457E14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2960A6227B0C70800EEC629 /* NetworkExtension.framework */,
 				44793906F9573C957D5D16D3 /* Pods_BYGeneralSwift.framework */,
 			);
 			name = Frameworks;
@@ -127,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				A22634852767231E00DF44A4 /* OffScreenRenderingViewController.swift */,
+				A2960A6C27B0CFAB00EEC629 /* OffScreenRenderingCollectionCell.swift */,
 			);
 			path = OffScreenRendering;
 			sourceTree = "<group>";
@@ -156,6 +172,7 @@
 		A2359A34275F0C2400F77A26 /* BYGeneralSwift */ = {
 			isa = PBXGroup;
 			children = (
+				A2960A6127B0C70800EEC629 /* BYGeneralSwift.entitlements */,
 				A2359A35275F0C2400F77A26 /* AppDelegate.swift */,
 				A2359A37275F0C2400F77A26 /* SceneDelegate.swift */,
 				A2359A39275F0C2400F77A26 /* ViewController.swift */,
@@ -168,6 +185,7 @@
 				A2359A43275F0C2600F77A26 /* LaunchScreen.storyboard */,
 				A2C291B7275F6ECF00A0B5DB /* launchImage.jpg */,
 				A2359A46275F0C2600F77A26 /* Info.plist */,
+				A2960A6427B0C96200EEC629 /* Res */,
 				A2359A3E275F0C2400F77A26 /* BYGeneralSwift.xcdatamodeld */,
 			);
 			path = BYGeneralSwift;
@@ -188,6 +206,24 @@
 				A2359A5B275F0C2600F77A26 /* BYGeneralSwiftUITestsLaunchTests.swift */,
 			);
 			path = BYGeneralSwiftUITests;
+			sourceTree = "<group>";
+		};
+		A2960A6427B0C96200EEC629 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				A2960A6527B0C96F00EEC629 /* Images */,
+			);
+			path = Res;
+			sourceTree = "<group>";
+		};
+		A2960A6527B0C96F00EEC629 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A2960A6727B0C98E00EEC629 /* image_1920x1200.jpeg */,
+				A2960A6827B0C98E00EEC629 /* ktm-1290-super-duke_921x518.jpeg */,
+				A2960A6627B0C98E00EEC629 /* KTM1290_1920x1080.jpeg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		A2C291A3275F641000A0B5DB /* Tools */ = {
@@ -248,6 +284,7 @@
 		A2C291BD2760A3E600A0B5DB /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				A2C77285276C7ECE003855A3 /* VPN */,
 				A2C291BF2760A57800A0B5DB /* DemosViewController.swift */,
 				A22634822767224800DF44A4 /* DemosViewController+Handler.swift */,
 				A226347C27632B1A00DF44A4 /* DemosTableViewCell.swift */,
@@ -263,6 +300,14 @@
 				A2C291C12760A59A00A0B5DB /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		A2C77285276C7ECE003855A3 /* VPN */ = {
+			isa = PBXGroup;
+			children = (
+				A2C77286276C7EDE003855A3 /* VPNViewController.swift */,
+			);
+			path = VPN;
 			sourceTree = "<group>";
 		};
 		E8BBA444E0C9DAABA3998618 /* Pods */ = {
@@ -381,8 +426,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2960A6A27B0C98F00EEC629 /* image_1920x1200.jpeg in Resources */,
 				A2C291B8275F6ECF00A0B5DB /* launchImage.jpg in Resources */,
 				A2359A45275F0C2600F77A26 /* LaunchScreen.storyboard in Resources */,
+				A2960A6927B0C98F00EEC629 /* KTM1290_1920x1080.jpeg in Resources */,
+				A2960A6B27B0C98F00EEC629 /* ktm-1290-super-duke_921x518.jpeg in Resources */,
 				A2359A42275F0C2600F77A26 /* Assets.xcassets in Resources */,
 				A2359A3D275F0C2400F77A26 /* Main.storyboard in Resources */,
 			);
@@ -472,11 +520,13 @@
 				A22634812763393E00DF44A4 /* DemoItem.swift in Sources */,
 				A2C291C02760A57800A0B5DB /* DemosViewController.swift in Sources */,
 				A2359A40275F0C2400F77A26 /* BYGeneralSwift.xcdatamodeld in Sources */,
+				A2960A6D27B0CFAB00EEC629 /* OffScreenRenderingCollectionCell.swift in Sources */,
 				A2C291A9275F646D00A0B5DB /* NavigationHandler.swift in Sources */,
 				A226347F2763308400DF44A4 /* Snapkit+Public.swift in Sources */,
 				A22634832767224800DF44A4 /* DemosViewController+Handler.swift in Sources */,
 				A2C291C22760A59A00A0B5DB /* HomeViewController.swift in Sources */,
 				A2C291BC2760A38900A0B5DB /* RootViewController.swift in Sources */,
+				A2C77287276C7EDE003855A3 /* VPNViewController.swift in Sources */,
 				A2C291A8275F646D00A0B5DB /* TimerHolder.swift in Sources */,
 				A2C291B0275F649A00A0B5DB /* ApplicationEventSubscriberProtocol.swift in Sources */,
 				A2C291AF275F649A00A0B5DB /* KeyboardEventObserverProtocol.swift in Sources */,
@@ -664,6 +714,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BYGeneralSwift/BYGeneralSwift.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P948MCUQ2Y;
@@ -693,6 +744,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BYGeneralSwift/BYGeneralSwift.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P948MCUQ2Y;

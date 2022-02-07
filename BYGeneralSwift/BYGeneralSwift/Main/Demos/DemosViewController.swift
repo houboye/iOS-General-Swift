@@ -13,7 +13,8 @@ class DemosViewController: BaseViewController {
     
     private lazy var dataArray: [DemoItem] = {
         [
-            DemoItem(title: "Off-screen rendering", demoType: .offScreenRendering)
+            DemoItem(title: "Off-screen rendering", demoType: .offScreenRendering),
+            DemoItem(title: "VPN", demoType: .VPN)
         ]
     }()
 
@@ -39,7 +40,7 @@ class DemosViewController: BaseViewController {
 
 extension DemosViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return dataArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
