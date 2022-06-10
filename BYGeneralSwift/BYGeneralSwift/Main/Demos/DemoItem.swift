@@ -10,6 +10,7 @@ import UIKit
 enum DemoType {
     case offScreenRendering
     case VPN
+    case linkedList
 }
 
 struct DemoItem {

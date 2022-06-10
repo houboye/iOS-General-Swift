@@ -9,6 +9,7 @@ target 'BYGeneralSwift' do
     pod 'WCDB.swift', '~> 1.0'
     pod 'SwiftState'
     pod 'Moya', '~> 15.0'
+    pod 'SwiftSoup'
     
     pod "GeneralTools", :path => "../GeneralTools"
     pod "BaseControllers", :path => "../BaseControllers"

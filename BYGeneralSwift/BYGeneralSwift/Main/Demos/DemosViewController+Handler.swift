@@ -17,6 +17,9 @@ extension DemosViewController {
         case .VPN:
             let viewController = VPNViewController()
             navigationController?.push(viewController: viewController)
+        case .linkedList:
+            let viewController = SwiftListNodeViewController()
+            navigationController?.push(viewController: viewController)
         }
     }
 }

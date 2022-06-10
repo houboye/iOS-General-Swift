@@ -22,6 +22,12 @@
 		A2359A50275F0C2600F77A26 /* BYGeneralSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A4F275F0C2600F77A26 /* BYGeneralSwiftTests.swift */; };
 		A2359A5A275F0C2600F77A26 /* BYGeneralSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A59275F0C2600F77A26 /* BYGeneralSwiftUITests.swift */; };
 		A2359A5C275F0C2600F77A26 /* BYGeneralSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A5B275F0C2600F77A26 /* BYGeneralSwiftUITestsLaunchTests.swift */; };
+		A273D2392852F4B4002BF683 /* SwiftListNodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A273D2382852F4B4002BF683 /* SwiftListNodeViewController.swift */; };
+		A273D23C2852F5D6002BF683 /* SwiftSinglyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A273D23B2852F5D6002BF683 /* SwiftSinglyLinkedList.swift */; };
+		A273D23E2852F5F8002BF683 /* SwiftDoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A273D23D2852F5F8002BF683 /* SwiftDoublyLinkedList.swift */; };
+		A273D2402852F61D002BF683 /* SwiftCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A273D23F2852F61D002BF683 /* SwiftCircularLinkedList.swift */; };
+		A273D2422852F77A002BF683 /* SwfitLinkedListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A273D2412852F77A002BF683 /* SwfitLinkedListProtocol.swift */; };
+		A273D2442852F818002BF683 /* SwiftLinkedListUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A273D2432852F818002BF683 /* SwiftLinkedListUtils.swift */; };
 		A2960A6327B0C70800EEC629 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2960A6227B0C70800EEC629 /* NetworkExtension.framework */; };
 		A2960A6927B0C98F00EEC629 /* KTM1290_1920x1080.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A2960A6627B0C98E00EEC629 /* KTM1290_1920x1080.jpeg */; };
 		A2960A6A27B0C98F00EEC629 /* image_1920x1200.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A2960A6727B0C98E00EEC629 /* image_1920x1200.jpeg */; };
@@ -81,6 +87,12 @@
 		A2359A55275F0C2600F77A26 /* BYGeneralSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BYGeneralSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2359A59275F0C2600F77A26 /* BYGeneralSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYGeneralSwiftUITests.swift; sourceTree = "<group>"; };
 		A2359A5B275F0C2600F77A26 /* BYGeneralSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYGeneralSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A273D2382852F4B4002BF683 /* SwiftListNodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftListNodeViewController.swift; sourceTree = "<group>"; };
+		A273D23B2852F5D6002BF683 /* SwiftSinglyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSinglyLinkedList.swift; sourceTree = "<group>"; };
+		A273D23D2852F5F8002BF683 /* SwiftDoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDoublyLinkedList.swift; sourceTree = "<group>"; };
+		A273D23F2852F61D002BF683 /* SwiftCircularLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCircularLinkedList.swift; sourceTree = "<group>"; };
+		A273D2412852F77A002BF683 /* SwfitLinkedListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwfitLinkedListProtocol.swift; sourceTree = "<group>"; };
+		A273D2432852F818002BF683 /* SwiftLinkedListUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLinkedListUtils.swift; sourceTree = "<group>"; };
 		A2960A6127B0C70800EEC629 /* BYGeneralSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BYGeneralSwift.entitlements; sourceTree = "<group>"; };
 		A2960A6227B0C70800EEC629 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		A2960A6627B0C98E00EEC629 /* KTM1290_1920x1080.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KTM1290_1920x1080.jpeg; sourceTree = "<group>"; };
@@ -208,6 +220,27 @@
 			path = BYGeneralSwiftUITests;
 			sourceTree = "<group>";
 		};
+		A273D2372852F45D002BF683 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				A273D23A2852F4BE002BF683 /* SwiftLinkedList */,
+				A273D2382852F4B4002BF683 /* SwiftListNodeViewController.swift */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		A273D23A2852F4BE002BF683 /* SwiftLinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				A273D23B2852F5D6002BF683 /* SwiftSinglyLinkedList.swift */,
+				A273D23D2852F5F8002BF683 /* SwiftDoublyLinkedList.swift */,
+				A273D23F2852F61D002BF683 /* SwiftCircularLinkedList.swift */,
+				A273D2412852F77A002BF683 /* SwfitLinkedListProtocol.swift */,
+				A273D2432852F818002BF683 /* SwiftLinkedListUtils.swift */,
+			);
+			path = SwiftLinkedList;
+			sourceTree = "<group>";
+		};
 		A2960A6427B0C96200EEC629 /* Res */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +317,7 @@
 		A2C291BD2760A3E600A0B5DB /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				A273D2372852F45D002BF683 /* LinkedList */,
 				A2C77285276C7ECE003855A3 /* VPN */,
 				A2C291BF2760A57800A0B5DB /* DemosViewController.swift */,
 				A22634822767224800DF44A4 /* DemosViewController+Handler.swift */,
@@ -519,11 +553,14 @@
 				A2359A3A275F0C2400F77A26 /* ViewController.swift in Sources */,
 				A22634812763393E00DF44A4 /* DemoItem.swift in Sources */,
 				A2C291C02760A57800A0B5DB /* DemosViewController.swift in Sources */,
+				A273D2402852F61D002BF683 /* SwiftCircularLinkedList.swift in Sources */,
+				A273D2422852F77A002BF683 /* SwfitLinkedListProtocol.swift in Sources */,
 				A2359A40275F0C2400F77A26 /* BYGeneralSwift.xcdatamodeld in Sources */,
 				A2960A6D27B0CFAB00EEC629 /* OffScreenRenderingCollectionCell.swift in Sources */,
 				A2C291A9275F646D00A0B5DB /* NavigationHandler.swift in Sources */,
 				A226347F2763308400DF44A4 /* Snapkit+Public.swift in Sources */,
 				A22634832767224800DF44A4 /* DemosViewController+Handler.swift in Sources */,
+				A273D2392852F4B4002BF683 /* SwiftListNodeViewController.swift in Sources */,
 				A2C291C22760A59A00A0B5DB /* HomeViewController.swift in Sources */,
 				A2C291BC2760A38900A0B5DB /* RootViewController.swift in Sources */,
 				A2C77287276C7EDE003855A3 /* VPNViewController.swift in Sources */,
@@ -533,10 +570,13 @@
 				A2359A36275F0C2400F77A26 /* AppDelegate.swift in Sources */,
 				A2C291B4275F64C600A0B5DB /* BaseService.swift in Sources */,
 				A2359A38275F0C2400F77A26 /* SceneDelegate.swift in Sources */,
+				A273D2442852F818002BF683 /* SwiftLinkedListUtils.swift in Sources */,
 				A2C291AA275F646D00A0B5DB /* Tools.swift in Sources */,
+				A273D23E2852F5F8002BF683 /* SwiftDoublyLinkedList.swift in Sources */,
 				A226347D27632B1A00DF44A4 /* DemosTableViewCell.swift in Sources */,
 				A2C291AB275F646D00A0B5DB /* NavigationAnimator.swift in Sources */,
 				A22634862767231E00DF44A4 /* OffScreenRenderingViewController.swift in Sources */,
+				A273D23C2852F5D6002BF683 /* SwiftSinglyLinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

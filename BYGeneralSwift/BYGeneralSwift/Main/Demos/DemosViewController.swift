@@ -14,7 +14,8 @@ class DemosViewController: BaseViewController {
     private lazy var dataArray: [DemoItem] = {
         [
             DemoItem(title: "Off-screen rendering", demoType: .offScreenRendering),
-            DemoItem(title: "VPN", demoType: .VPN)
+            DemoItem(title: "VPN", demoType: .VPN),
+            DemoItem(title: "LinkList", demoType: .linkedList),
         ]
     }()
 
