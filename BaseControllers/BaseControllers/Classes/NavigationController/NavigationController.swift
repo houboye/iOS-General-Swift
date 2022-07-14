@@ -54,29 +54,20 @@ extension NavigationController: UINavigationBarDelegate {
         let backButton = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
         item.backBarButtonItem = backButton
         
-        debugPrint("------------shouldPush-------------")
-        debugPrint(topViewController as Any)
-        debugPrint("------------shouldPush-------------")
         return true
     }
     
     // 此方法不靠谱，只会在点击返回按钮的时候触发，手势返回不会触发
     public func navigationBar(_ navigationBar: UINavigationBar, shouldPop item: UINavigationItem) -> Bool {
-        debugPrint("------------shouldPop-------------")
-        debugPrint(topViewController as Any)
-        debugPrint("------------shouldPop-------------")
+        
         return true
     }
     
     public func navigationBar(_ navigationBar: UINavigationBar, didPush item: UINavigationItem) {
-        debugPrint("------------didPush-------------")
-        debugPrint(topViewController as Any)
-        debugPrint("------------didPush-------------")
+        
     }
     
     public func navigationBar(_ navigationBar: UINavigationBar, didPop item: UINavigationItem) {
-        debugPrint("------------didPop-------------")
-        debugPrint(topViewController as Any)
-        debugPrint("------------didPop-------------")
+        
     }
 }

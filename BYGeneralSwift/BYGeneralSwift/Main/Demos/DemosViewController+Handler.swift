@@ -20,6 +20,9 @@ extension DemosViewController {
         case .linkedList:
             let viewController = SwiftListNodeViewController()
             navigationController?.push(viewController: viewController)
+        case .promiseKit:
+            let viewController = PromiseKitViewController()
+            navigationController?.push(viewController: viewController)
         }
     }
 }

@@ -16,6 +16,7 @@ class DemosViewController: BaseViewController {
             DemoItem(title: "Off-screen rendering", demoType: .offScreenRendering),
             DemoItem(title: "VPN", demoType: .VPN),
             DemoItem(title: "LinkList", demoType: .linkedList),
+            DemoItem(title: "Promise Kit", demoType: .promiseKit),
         ]
     }()
 

@@ -11,6 +11,7 @@ enum DemoType {
     case offScreenRendering
     case VPN
     case linkedList
+    case promiseKit
 }
 
 struct DemoItem {
