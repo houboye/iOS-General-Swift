@@ -17,14 +17,9 @@ PODS:
   - PromiseKit/UIKit (6.17.1):
     - PromiseKit/CorePromise
   - SnapKit (5.0.1)
-  - SQLiteRepairKit (1.2.2):
-    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - SwiftFormatter (0.0.1)
   - SwiftSoup (2.4.2)
   - SwiftState (6.0.0)
-  - WCDB.swift (1.0.8.2):
-    - SQLiteRepairKit (~> 1.2.0)
-    - WCDBOptimizedSQLCipher (~> 1.2.0)
-  - WCDBOptimizedSQLCipher (1.2.1)
 
 DEPENDENCIES:
   - BaseControllers (from `../BaseControllers`)
@@ -32,9 +27,9 @@ DEPENDENCIES:
   - Moya (~> 15.0)
   - PromiseKit
   - SnapKit (~> 5.0.0)
+  - SwiftFormatter (from `../SwiftFormatter`)
   - SwiftSoup
   - SwiftState
-  - WCDB.swift (~> 1.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -42,17 +37,16 @@ SPEC REPOS:
     - Moya
     - PromiseKit
     - SnapKit
-    - SQLiteRepairKit
     - SwiftSoup
     - SwiftState
-    - WCDB.swift
-    - WCDBOptimizedSQLCipher
 
 EXTERNAL SOURCES:
   BaseControllers:
     :path: "../BaseControllers"
   GeneralTools:
     :path: "../GeneralTools"
+  SwiftFormatter:
+    :path: "../SwiftFormatter"
 
 SPEC CHECKSUMS:
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
@@ -61,12 +55,10 @@ SPEC CHECKSUMS:
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   PromiseKit: ee485df3d4dc570594d7e7aecae6352697dc6a4c
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
+  SwiftFormatter: 7abc07be43d7bc636e49d04d28552e00397b9ab4
   SwiftSoup: 7589ceac3b38cef742a96981cfe2b14ba55ce1e3
   SwiftState: 5696580d3b91656d1c67773ca5c6d5e51610c711
-  WCDB.swift: 05d509d7a0e60fb6e11c34eb7e4027c0fab5849f
-  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
 
-PODFILE CHECKSUM: 4b6c6196fdb3372e9bb1cf4c640a27dd9f452cb0
+PODFILE CHECKSUM: f0fc4860e5f54951abad0463309ffde07b3b8694
 
 COCOAPODS: 1.11.2

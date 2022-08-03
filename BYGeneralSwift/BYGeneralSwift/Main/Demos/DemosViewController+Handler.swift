@@ -23,6 +23,9 @@ extension DemosViewController {
         case .promiseKit:
             let viewController = PromiseKitViewController()
             navigationController?.push(viewController: viewController)
+        case .format:
+            let viewController = FormatIndexViewController()
+            navigationController?.push(viewController: viewController)
         }
     }
 }

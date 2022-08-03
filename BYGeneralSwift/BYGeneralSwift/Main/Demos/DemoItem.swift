@@ -12,6 +12,7 @@ enum DemoType {
     case VPN
     case linkedList
     case promiseKit
+    case format
 }
 
 struct DemoItem {

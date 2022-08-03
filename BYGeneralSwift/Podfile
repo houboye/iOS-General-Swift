@@ -6,7 +6,6 @@ inhibit_all_warnings!
 
 target 'BYGeneralSwift' do
     pod 'SnapKit', '~> 5.0.0'
-    pod 'WCDB.swift', '~> 1.0'
     pod 'SwiftState'
     pod 'Moya', '~> 15.0'
     pod 'SwiftSoup'
@@ -14,4 +13,5 @@ target 'BYGeneralSwift' do
     
     pod "GeneralTools", :path => "../GeneralTools"
     pod "BaseControllers", :path => "../BaseControllers"
+    pod "SwiftFormatter", :path => "../SwiftFormatter"
 end

@@ -45,6 +45,10 @@
 		A2C291BC2760A38900A0B5DB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291BB2760A38900A0B5DB /* RootViewController.swift */; };
 		A2C291C02760A57800A0B5DB /* DemosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291BF2760A57800A0B5DB /* DemosViewController.swift */; };
 		A2C291C22760A59A00A0B5DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C291C12760A59A00A0B5DB /* HomeViewController.swift */; };
+		A2C5149C289A772E008CB38C /* FormatIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5149B289A772E008CB38C /* FormatIndexViewController.swift */; };
+		A2C5149E289A8147008CB38C /* DateFormatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5149D289A8147008CB38C /* DateFormatViewController.swift */; };
+		A2C514A0289A8158008CB38C /* NumberFormatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5149F289A8158008CB38C /* NumberFormatViewController.swift */; };
+		A2C514A2289A8164008CB38C /* CurrencyFormatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C514A1289A8164008CB38C /* CurrencyFormatViewController.swift */; };
 		A2C77287276C7EDE003855A3 /* VPNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C77286276C7EDE003855A3 /* VPNViewController.swift */; };
 		BE5022C06BA3FEC3CDEC51E1 /* Pods_BYGeneralSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44793906F9573C957D5D16D3 /* Pods_BYGeneralSwift.framework */; };
 /* End PBXBuildFile section */
@@ -112,6 +116,10 @@
 		A2C291BB2760A38900A0B5DB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		A2C291BF2760A57800A0B5DB /* DemosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemosViewController.swift; sourceTree = "<group>"; };
 		A2C291C12760A59A00A0B5DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A2C5149B289A772E008CB38C /* FormatIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatIndexViewController.swift; sourceTree = "<group>"; };
+		A2C5149D289A8147008CB38C /* DateFormatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatViewController.swift; sourceTree = "<group>"; };
+		A2C5149F289A8158008CB38C /* NumberFormatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatViewController.swift; sourceTree = "<group>"; };
+		A2C514A1289A8164008CB38C /* CurrencyFormatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatViewController.swift; sourceTree = "<group>"; };
 		A2C77286276C7EDE003855A3 /* VPNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNViewController.swift; sourceTree = "<group>"; };
 		B59E0C565FF9452B81DA052B /* Pods-BYGeneralSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BYGeneralSwift.debug.xcconfig"; path = "Target Support Files/Pods-BYGeneralSwift/Pods-BYGeneralSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -327,6 +335,7 @@
 		A2C291BD2760A3E600A0B5DB /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				A2C5149A289A7661008CB38C /* Formatters */,
 				A28A76D1288003670036101D /* PromiseKit */,
 				A273D2372852F45D002BF683 /* LinkedList */,
 				A2C77285276C7ECE003855A3 /* VPN */,
@@ -345,6 +354,17 @@
 				A2C291C12760A59A00A0B5DB /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		A2C5149A289A7661008CB38C /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				A2C5149B289A772E008CB38C /* FormatIndexViewController.swift */,
+				A2C5149D289A8147008CB38C /* DateFormatViewController.swift */,
+				A2C5149F289A8158008CB38C /* NumberFormatViewController.swift */,
+				A2C514A1289A8164008CB38C /* CurrencyFormatViewController.swift */,
+			);
+			path = Formatters;
 			sourceTree = "<group>";
 		};
 		A2C77285276C7ECE003855A3 /* VPN */ = {
@@ -574,14 +594,18 @@
 				A22634832767224800DF44A4 /* DemosViewController+Handler.swift in Sources */,
 				A273D2392852F4B4002BF683 /* SwiftListNodeViewController.swift in Sources */,
 				A2C291C22760A59A00A0B5DB /* HomeViewController.swift in Sources */,
+				A2C5149E289A8147008CB38C /* DateFormatViewController.swift in Sources */,
 				A2C291BC2760A38900A0B5DB /* RootViewController.swift in Sources */,
 				A2C77287276C7EDE003855A3 /* VPNViewController.swift in Sources */,
+				A2C514A2289A8164008CB38C /* CurrencyFormatViewController.swift in Sources */,
 				A2C291A8275F646D00A0B5DB /* TimerHolder.swift in Sources */,
 				A2C291B0275F649A00A0B5DB /* ApplicationEventSubscriberProtocol.swift in Sources */,
 				A2C291AF275F649A00A0B5DB /* KeyboardEventObserverProtocol.swift in Sources */,
 				A2359A36275F0C2400F77A26 /* AppDelegate.swift in Sources */,
 				A2C291B4275F64C600A0B5DB /* BaseService.swift in Sources */,
 				A2359A38275F0C2400F77A26 /* SceneDelegate.swift in Sources */,
+				A2C5149C289A772E008CB38C /* FormatIndexViewController.swift in Sources */,
+				A2C514A0289A8158008CB38C /* NumberFormatViewController.swift in Sources */,
 				A273D2442852F818002BF683 /* SwiftLinkedListUtils.swift in Sources */,
 				A2C291AA275F646D00A0B5DB /* Tools.swift in Sources */,
 				A273D23E2852F5F8002BF683 /* SwiftDoublyLinkedList.swift in Sources */,

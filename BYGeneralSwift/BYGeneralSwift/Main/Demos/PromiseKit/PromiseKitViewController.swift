@@ -13,7 +13,7 @@ class PromiseKitViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let p = hungry()
+        _ = hungry()
         
     }
     
