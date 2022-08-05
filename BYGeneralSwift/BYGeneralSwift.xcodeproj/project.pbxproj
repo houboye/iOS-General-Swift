@@ -407,6 +407,8 @@
 			dependencies = (
 			);
 			name = BYGeneralSwift;
+			packageProductDependencies = (
+			);
 			productName = BYGeneralSwift;
 			productReference = A2359A32275F0C2400F77A26 /* BYGeneralSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -479,6 +481,8 @@
 				Base,
 			);
 			mainGroup = A2359A29275F0C2300F77A26;
+			packageReferences = (
+			);
 			productRefGroup = A2359A33275F0C2400F77A26 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

@@ -10,6 +10,7 @@ target 'BYGeneralSwift' do
     pod 'Moya', '~> 15.0'
     pod 'SwiftSoup'
     pod "PromiseKit"
+    pod 'LTMorphingLabel'
     
     pod "GeneralTools", :path => "../GeneralTools"
     pod "BaseControllers", :path => "../BaseControllers"
