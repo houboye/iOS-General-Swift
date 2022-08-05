@@ -13,12 +13,12 @@ enum TabBarType: Int {
     case Demos
 }
 
-fileprivate let TabbarVC = "vc"
-fileprivate let TabbarTitle = "title"
-fileprivate let TabbarImage = "image"
-fileprivate let TabbarSelectedImage = "selectedImage"
-fileprivate let TabbarItemBadgeValue = "badgeValue"
-fileprivate let TabBarCount = 2
+private let TabbarVC = "vc"
+private let TabbarTitle = "title"
+private let TabbarImage = "image"
+private let TabbarSelectedImage = "selectedImage"
+private let TabbarItemBadgeValue = "badgeValue"
+private let TabBarCount = 2
 
 class RootViewController: UITabBarController {
 
@@ -33,14 +33,14 @@ class RootViewController: UITabBarController {
         }
         return nil
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         tabBar.backgroundColor = UIColor.systemGray6
         setupSubNavigationController()
     }
-    
+
     private func setupSubNavigationController() {
         tabbars().forEach { obj in
             let type = obj
@@ -49,10 +49,10 @@ class RootViewController: UITabBarController {
             let title = item[TabbarTitle] as! String
             let imageName = item[TabbarImage] as! String
             let imageSelected = item[TabbarSelectedImage] as! String
-            
+
             let clazz = NSClassFromString(vcName) as! UIViewController.Type
             let vc = clazz.init()
-            
+
             _ = setupChildViewController(vc, title: title, image: imageName, selectedImage: imageSelected)
         }
 //        let handlerArray = tabbars().compactMap { (obj) -> NavigationHandler in
@@ -74,7 +74,7 @@ class RootViewController: UITabBarController {
 //        }
 //        navigationHandlers = handlerArray
     }
-    
+
     private func tabbars() -> [TabBarType] {
         var items = [TabBarType]()
         for index in 0..<TabBarCount {
@@ -82,38 +82,38 @@ class RootViewController: UITabBarController {
         }
         return items
     }
-    
+
     private func setupChildViewController(_ viewController: UIViewController, title: String, image: String, selectedImage: String) -> UINavigationController {
         viewController.title = title
         let nc = NavigationController(rootViewController: viewController)
-        
+
         var bgImage = UIImage(named: image)
         bgImage = bgImage?.withRenderingMode(.alwaysOriginal)
         var bgSelectedImage = UIImage(named: selectedImage)
         bgSelectedImage = bgSelectedImage?.withRenderingMode(.alwaysOriginal)
-        
+
         nc.tabBarItem.image = bgImage
         nc.tabBarItem.selectedImage = bgSelectedImage
         nc.tabBarItem.title = title
         nc.tabBarItem.imageInsets = UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
-        
+
         addChild(nc)
-        
+
         return nc
     }
-    
+
     private func vcInfo(for tabType: TabBarType) -> [String: Any] {
-        
+
         let congfig = [TabBarType.Home: [TabbarVC: NSStringFromClass(HomeViewController.self),
                                             TabbarTitle: "Home",
                                             TabbarImage: "B1",
                                             TabbarSelectedImage: "A1"],
-                       
+
                        TabBarType.Demos: [TabbarVC: NSStringFromClass(DemosViewController.self),
                                                 TabbarTitle: "Demos",
                                                 TabbarImage: "B2",
                                                 TabbarSelectedImage: "A2"]]
-        
+
         return congfig[tabType]!
     }
 }

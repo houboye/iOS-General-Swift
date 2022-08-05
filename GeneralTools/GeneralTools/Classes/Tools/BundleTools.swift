@@ -8,7 +8,7 @@ final public class BundleTools {
         }
         return Bundle(path: path)
     }
-    
+
     public static func image(_ name: String, in bundle: Bundle?) -> UIImage? {
         return UIImage(named: name, in: bundle, compatibleWith: nil)
     }

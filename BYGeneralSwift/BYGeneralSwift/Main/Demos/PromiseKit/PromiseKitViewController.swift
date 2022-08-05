@@ -12,11 +12,11 @@ class PromiseKitViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         _ = hungry()
-        
+
     }
-    
+
     func hungry() -> Promise<Void> {
         return cook()
             .then(eat)
@@ -25,7 +25,7 @@ class PromiseKitViewController: UIViewController {
                 print(data)
             }
     }
-    
+
     func cook() -> Promise<String> {
         print("开始做饭")
         return Promise<String> { resolver in
@@ -35,7 +35,7 @@ class PromiseKitViewController: UIViewController {
             }
         }
     }
-    
+
     func eat(_ dishName: String) -> Promise<String> {
         print("开始吃饭L: \(dishName)")
         return Promise<String> { resolver in
@@ -45,7 +45,7 @@ class PromiseKitViewController: UIViewController {
             }
         }
     }
-    
+
     func wash(_ kitchenUtensils: String) -> Promise<String> {
         print("开始洗碗：\(kitchenUtensils)")
         return Promise<String> { resolver in

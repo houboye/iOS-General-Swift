@@ -49,6 +49,7 @@
 		A2C5149E289A8147008CB38C /* DateFormatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5149D289A8147008CB38C /* DateFormatViewController.swift */; };
 		A2C514A0289A8158008CB38C /* NumberFormatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5149F289A8158008CB38C /* NumberFormatViewController.swift */; };
 		A2C514A2289A8164008CB38C /* CurrencyFormatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C514A1289A8164008CB38C /* CurrencyFormatViewController.swift */; };
+		A2C514A7289CC307008CB38C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A2C514A6289CC307008CB38C /* .swiftlint.yml */; };
 		A2C77287276C7EDE003855A3 /* VPNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C77286276C7EDE003855A3 /* VPNViewController.swift */; };
 		BE5022C06BA3FEC3CDEC51E1 /* Pods_BYGeneralSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44793906F9573C957D5D16D3 /* Pods_BYGeneralSwift.framework */; };
 /* End PBXBuildFile section */
@@ -120,6 +121,7 @@
 		A2C5149D289A8147008CB38C /* DateFormatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatViewController.swift; sourceTree = "<group>"; };
 		A2C5149F289A8158008CB38C /* NumberFormatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatViewController.swift; sourceTree = "<group>"; };
 		A2C514A1289A8164008CB38C /* CurrencyFormatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatViewController.swift; sourceTree = "<group>"; };
+		A2C514A6289CC307008CB38C /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		A2C77286276C7EDE003855A3 /* VPNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNViewController.swift; sourceTree = "<group>"; };
 		B59E0C565FF9452B81DA052B /* Pods-BYGeneralSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BYGeneralSwift.debug.xcconfig"; path = "Target Support Files/Pods-BYGeneralSwift/Pods-BYGeneralSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +174,7 @@
 		A2359A29275F0C2300F77A26 = {
 			isa = PBXGroup;
 			children = (
+				A2C514A6289CC307008CB38C /* .swiftlint.yml */,
 				A2359A34275F0C2400F77A26 /* BYGeneralSwift */,
 				A2359A4E275F0C2600F77A26 /* BYGeneralSwiftTests */,
 				A2359A58275F0C2600F77A26 /* BYGeneralSwiftUITests */,
@@ -397,6 +400,7 @@
 				A2359A30275F0C2400F77A26 /* Resources */,
 				F79465A9107D38E90225CC56 /* [CP] Embed Pods Frameworks */,
 				D23F8AAC7FAEBD6F29A9E664 /* [CP] Copy Pods Resources */,
+				A2C514A3289CC087008CB38C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -491,6 +495,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C514A7289CC307008CB38C /* .swiftlint.yml in Resources */,
 				A2960A6A27B0C98F00EEC629 /* image_1920x1200.jpeg in Resources */,
 				A2C291B8275F6ECF00A0B5DB /* launchImage.jpg in Resources */,
 				A2359A45275F0C2600F77A26 /* LaunchScreen.storyboard in Resources */,
@@ -518,6 +523,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A2C514A3289CC087008CB38C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		A60307C2FE7FB266BED4416E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

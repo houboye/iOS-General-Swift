@@ -15,11 +15,11 @@ class SwiftListNodeViewController: UIViewController {
         testSingleLinkedList()
         testDoubleLinkedList()
     }
-    
+
     /// 测试单向链表
     func testSingleLinkedList() {
         let list = SwiftSinglyLinkedList<Int>()
-        
+
         list.append(11)
         list.append(22)
         list.append(33)
@@ -39,14 +39,14 @@ class SwiftListNodeViewController: UIViewController {
         assert(list[0] == 11)
         assert(list[1] == 66)
         assert(list[list.count - 1] == 44)
-        
+
         print(list.description)
     }
-    
+
     /// 测试双向链表
     func testDoubleLinkedList() {
         let list = SwiftDoublyLinkedList<Int>()
-        
+
         list.append(11)
         list.append(22)
         list.append(33)
@@ -66,7 +66,7 @@ class SwiftListNodeViewController: UIViewController {
         assert(list[0] == 11)
         assert(list[1] == 66)
         assert(list[list.count - 1] == 44)
-        
+
         print(list.description)
     }
 }

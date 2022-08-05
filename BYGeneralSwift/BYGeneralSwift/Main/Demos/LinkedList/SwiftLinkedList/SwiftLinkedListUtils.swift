@@ -8,7 +8,7 @@
 import UIKit
 
 struct SwiftLinkedListUtils {
-    
+
     /// LinkedList out of bounds
     /// - Parameters:
     ///   - index: index
@@ -16,7 +16,7 @@ struct SwiftLinkedListUtils {
     private static func outOfBounds(_ index: Int, size: Int) {
         assert(false, "SwiftLinkedList out of bounds：index --> \(index), size --> \(size)")
     }
-    
+
     /// check index valid
     /// - Parameters:
     ///   - index: index
@@ -26,7 +26,7 @@ struct SwiftLinkedListUtils {
             outOfBounds(index, size: size)
         }
     }
-    
+
     /// check add index valid
     /// - Parameters:
     ///   - index: index
@@ -36,5 +36,5 @@ struct SwiftLinkedListUtils {
             outOfBounds(index, size: size)
         }
     }
-    
+
 }

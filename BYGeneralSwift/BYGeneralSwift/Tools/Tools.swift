@@ -9,33 +9,33 @@
 import Foundation
 
 class Tools {
-    
+
     /// 得到某个文件夹大小
     ///
     /// - Parameter path: 文件夹路径
     /// - Returns: 文件大小，单位为MB
     class func getFileSize(_ path: String) -> Double {
         let manager = FileManager.default
-        
+
         if manager.fileExists(atPath: path) {
             let subFilePath = manager.subpaths(atPath: path)
-            
+
             if subFilePath == nil || (subFilePath?.count)! <= 0 { return 0 }
-            
+
             var fileTotalSize = 0.0
-            
+
             for fileName in subFilePath! {
                 let filePath = path + "/" + fileName
                 let fileAttributes = try! manager.attributesOfItem(atPath: filePath)
                 if (fileAttributes[FileAttributeKey.type] as! FileAttributeType) == FileAttributeType.typeDirectory { continue }
                 fileTotalSize += fileAttributes[FileAttributeKey.size] as! Double
             }
-            //将字节大小转为MB，然后传出去
+            // 将字节大小转为MB，然后传出去
             return fileTotalSize/1000.0/1000
         }
         return 0.0
     }
-    
+
     /// 清除某文件夹
     ///
     /// - Parameter path: 文件路径
@@ -43,7 +43,7 @@ class Tools {
         let manager = FileManager.default
         try? manager.removeItem(atPath: path)
     }
-    
+
     /// 得到一个类直至rootClass的属性列表
     ///
     /// - Parameters:
@@ -68,7 +68,7 @@ class Tools {
         }
         return array
     }
-    
+
     class func createDirectory(_ path: String) {
         let fm = FileManager.default
         if !fm.fileExists(atPath: path) {

@@ -10,9 +10,9 @@ import UIKit
 
 @objcMembers
 class NavigationHandler: NSObject, UIGestureRecognizerDelegate, NavigationAnimatorDelegate {
-    
+
     private(set) var recognizer: UIPanGestureRecognizer!
-    
+
     private var navigationController: UINavigationController!
     private var interaction: UIPercentDrivenInteractiveTransition!
     private var animator: NavigationAnimator!
@@ -23,11 +23,11 @@ class NavigationHandler: NSObject, UIGestureRecognizerDelegate, NavigationAnimat
         popShadow.startPoint = CGPoint(x: 1.0, y: 0.5)
         popShadow.endPoint = CGPoint(x: 0, y: 0.5)
         popShadow.colors = [UIColor(white: 0.0, alpha: 0.2).cgColor, UIColor.clear.cgColor]
-        
+
         return popShadow
     }
     private var isAnimating: Bool = false
-    
+
     init(navigationController: UINavigationController) {
         super.init()
         recognizer = UIPanGestureRecognizer(target: self, action: #selector(pan(_:)))
@@ -38,12 +38,12 @@ class NavigationHandler: NSObject, UIGestureRecognizerDelegate, NavigationAnimat
         animator.delegate = self
         self.navigationController = navigationController
     }
-    
-    @objc func pan(_ recognizer: UIPanGestureRecognizer) {
+
+    func pan(_ recognizer: UIPanGestureRecognizer) {
         guard let view = recognizer.view else {
             return
         }
-        
+
         switch recognizer.state {
         case .began:
             let location = recognizer.location(in: view)
@@ -67,7 +67,7 @@ class NavigationHandler: NSObject, UIGestureRecognizerDelegate, NavigationAnimat
             break
         }
     }
-    
+
     // UIGestureRecognizerDelegate
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         let forbid = isForbidInteractivePop(navigationController.topViewController!)
@@ -78,20 +78,20 @@ class NavigationHandler: NSObject, UIGestureRecognizerDelegate, NavigationAnimat
         let location = gestureRecognizer.location(in: view)
         return location.x < 44
     }
-    
+
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRequireFailureOf otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return otherGestureRecognizer.view?.superview?.isKind(of: UITableView.self) ?? false
     }
-    
+
     // NavigationAnimatorDelegate
     func animationWillStart(_ animator: NavigationAnimator) {
         isAnimating = true
     }
-    
+
     func animationDidEnd(_ animator: NavigationAnimator) {
         isAnimating = false
     }
-    
+
     // Private
     func isUseClearBar(_ vc: UIViewController) -> Bool {
         let sel = NSSelectorFromString("useClearBar")
@@ -101,7 +101,7 @@ class NavigationHandler: NSObject, UIGestureRecognizerDelegate, NavigationAnimat
         }
         return use
     }
-    
+
     func isForbidInteractivePop(_ vc: UIViewController) -> Bool {
         let sel = NSSelectorFromString("forbidInteractivePop")
         var use = false
@@ -113,21 +113,25 @@ class NavigationHandler: NSObject, UIGestureRecognizerDelegate, NavigationAnimat
 }
 
 extension NavigationHandler: UINavigationControllerDelegate {
-    func navigationController(_ navigationController: UINavigationController, interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+    func navigationController(_ navigationController: UINavigationController,
+                              interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
         return interaction
     }
-    
-    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+
+    func navigationController(_ navigationController: UINavigationController,
+                              animationControllerFor operation: UINavigationController.Operation,
+                              from fromVC: UIViewController,
+                              to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         currentOperation = operation
         animator.currentOpearation = operation
         let cross = isUseClearBar(fromVC) || isUseClearBar(toVC)
         animator.animationType = cross ? .cross : .normal
-        
+
         if operation == .pop {
             fromVC.view.layer.addSublayer(uiPopShadow)
         }
-        
+
         return animator
-        
+
     }
 }

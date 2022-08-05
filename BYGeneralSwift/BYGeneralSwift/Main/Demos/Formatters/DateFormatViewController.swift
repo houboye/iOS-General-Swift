@@ -9,6 +9,9 @@ import UIKit
 
 class DateFormatViewController: UIViewController {
 
+    let datePickerLabel = UILabel()
+    let textField1 = UITextField()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Date"

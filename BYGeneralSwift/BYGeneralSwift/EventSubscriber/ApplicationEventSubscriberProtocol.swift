@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc protocol ApplicationEventSubscriberProtocolOBJC: class {
+@objc protocol ApplicationEventSubscriberProtocolOBJC: AnyObject {
     func applicationDidEnterBackgroundNotificationReceived(_ notification: Notification)
     func applicationWillEnterForegroundNotificationReceived(_ notification: Notification)
     func applicationDidFinishLaunchingNotificationReceived(_ notification: Notification)
@@ -21,7 +21,7 @@ import UIKit
 
 protocol ApplicationEventSubscriberProtocol: ApplicationEventSubscriberProtocolOBJC {
     func beginObservingApplicationEvent()
-    
+
     func onApplicationDidEnterBackgroundNotificationReceived(_ notification: Notification)
     func onApplicationWillEnterForegroundNotificationReceived(_ notification: Notification)
     func onApplicationDidFinishLaunchingNotificationReceived(_ notification: Notification)
@@ -30,7 +30,7 @@ protocol ApplicationEventSubscriberProtocol: ApplicationEventSubscriberProtocolO
     func onApplicationDidReceiveMemoryWarningNotificationReceived(_ notification: Notification)
     func onApplicationWillTerminateNotificationReceived(_ notification: Notification)
     func onApplicationSignificantTimeChangeNotificationReceived(_ notification: Notification)
-    
+
     func respondToApplicationDidEnterBackground()
     func respondToApplicationWillEnterForeground()
     func respondToApplicationDidFinishLaunching()
@@ -76,7 +76,7 @@ extension ApplicationEventSubscriberProtocol {
                                                name: UIApplication.significantTimeChangeNotification,
                                                object: nil)
     }
-    
+
     func onApplicationDidEnterBackgroundNotificationReceived(_ notification: Notification) {
         respondToApplicationDidEnterBackground()
     }

@@ -16,18 +16,18 @@ import UIKit
 
 /// Check out `SubscriberProtocolSpec.md` for detail.
 protocol KeyboardEventSubscriberProtocol: KeyboardEventSubscriberProtocolOBJC {
-    
+
     /// Alias of three vital animation parameters.
     typealias KeyboardAnimationParameters
         = (endFrame: CGRect, curve: UIView.AnimationOptions, duration: Double)
-    
+
     func beginObservingKeyboardEvents()
-    
+
     /// Invoked when the keyboard is about to be shown.
     func onKeyboardShowingEventNotificationReceived(_ notification: Notification)
     /// Invoked when the keyboard is about to hide.
     func onKeyboardHidingEventNotificationReceived(_ notification: Notification)
-    
+
     func respondToKeyboardEvent(
         showingInsteadOfHiding: Bool,
         with parameters: KeyboardAnimationParameters)
@@ -40,24 +40,24 @@ extension KeyboardEventSubscriberProtocol {
             selector: #selector(keyboardShowingEventNotificationReceived(_:)),
             name: UIResponder.keyboardWillShowNotification,
             object: nil)
-        
+
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(keyboardHidingEventNotificationReceived(_:)),
             name: UIResponder.keyboardWillHideNotification,
             object: nil)
     }
-    
+
     func onKeyboardShowingEventNotificationReceived(_ notification: Notification) {
         guard let parameters = keyboardAnimationParamters(of: notification) else { return }
         respondToKeyboardEvent(showingInsteadOfHiding: true, with: parameters)
     }
-    
+
     func onKeyboardHidingEventNotificationReceived(_ notification: Notification) {
         guard let parameters = keyboardAnimationParamters(of: notification) else { return }
         respondToKeyboardEvent(showingInsteadOfHiding: false, with: parameters)
     }
-    
+
     /// Extract animation parameters from the system notification.
     func keyboardAnimationParamters(
         of notification: Notification
@@ -77,4 +77,3 @@ extension KeyboardEventSubscriberProtocol {
         return (endFrame, curve, duration)
     }
 }
-
