@@ -72,6 +72,7 @@ class HomeViewController: BaseViewController {
             label.morphingEffect = effect
             label.text = "Hello Swift! + \(effectRawvalue)"
             let index = Int.random(in: 0..<textArray.count)
+            animationLabel.morphingEffect = effect
             animationLabel.text = textArray[index]
             if effectRawvalue < 6 {
                 effectRawvalue += 1
