@@ -14,7 +14,6 @@
 		A22634862767231E00DF44A4 /* OffScreenRenderingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22634852767231E00DF44A4 /* OffScreenRenderingViewController.swift */; };
 		A2359A36275F0C2400F77A26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A35275F0C2400F77A26 /* AppDelegate.swift */; };
 		A2359A38275F0C2400F77A26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A37275F0C2400F77A26 /* SceneDelegate.swift */; };
-		A2359A3A275F0C2400F77A26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2359A39275F0C2400F77A26 /* ViewController.swift */; };
 		A2359A3D275F0C2400F77A26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2359A3B275F0C2400F77A26 /* Main.storyboard */; };
 		A2359A40275F0C2400F77A26 /* BYGeneralSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2359A3E275F0C2400F77A26 /* BYGeneralSwift.xcdatamodeld */; };
 		A2359A42275F0C2600F77A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2359A41275F0C2600F77A26 /* Assets.xcassets */; };
@@ -82,7 +81,6 @@
 		A2359A32275F0C2400F77A26 /* BYGeneralSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BYGeneralSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2359A35275F0C2400F77A26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2359A37275F0C2400F77A26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A2359A39275F0C2400F77A26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A2359A3C275F0C2400F77A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2359A3F275F0C2400F77A26 /* BYGeneralSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BYGeneralSwift.xcdatamodel; sourceTree = "<group>"; };
 		A2359A41275F0C2600F77A26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 				A2960A6127B0C70800EEC629 /* BYGeneralSwift.entitlements */,
 				A2359A35275F0C2400F77A26 /* AppDelegate.swift */,
 				A2359A37275F0C2400F77A26 /* SceneDelegate.swift */,
-				A2359A39275F0C2400F77A26 /* ViewController.swift */,
 				A2C291B92760A2DF00A0B5DB /* Main */,
 				A2C291B1275F64B000A0B5DB /* Base */,
 				A2C291AC275F648C00A0B5DB /* EventSubscriber */,
@@ -607,7 +604,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2359A3A275F0C2400F77A26 /* ViewController.swift in Sources */,
 				A22634812763393E00DF44A4 /* DemoItem.swift in Sources */,
 				A2C291C02760A57800A0B5DB /* DemosViewController.swift in Sources */,
 				A28A76D32880037E0036101D /* PromiseKitViewController.swift in Sources */,
