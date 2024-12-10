@@ -8,10 +8,10 @@
 import Foundation
 
 class SwiftDoublyLinkedList<E> where E: Equatable {
-    private class Node<E> {
-        weak var prev: Node<E>?
-        var element: E
-        var next: Node<E>?
+    private class Node<T> {
+        weak var prev: Node<T>?
+        var element: T
+        var next: Node<T>?
 
         /// 简述(debug 用)
         var description: String {
@@ -24,10 +24,10 @@ class SwiftDoublyLinkedList<E> where E: Equatable {
             return desc
         }
 
-        init(prev: Node<E>?, element: E, next: Node<E>?) {
-            self.prev    = prev
+        init(prev: Node<T>?, element: T, next: Node<T>?) {
+            self.prev = prev
             self.element = element
-            self.next    = next
+            self.next = next
         }
     }
 

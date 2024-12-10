@@ -8,10 +8,10 @@
 import Foundation
 
 public class SwiftSinglyLinkedList<E> where E: Equatable {
-    private class Node<E> {
-        var element: E
-        var next: Node<E>?
-        init(element: E, next: Node<E>?) {
+    private class Node<T> {
+        var element: T
+        var next: Node<T>?
+        init(element: T, next: Node<T>?) {
             self.element = element
             self.next = next
         }

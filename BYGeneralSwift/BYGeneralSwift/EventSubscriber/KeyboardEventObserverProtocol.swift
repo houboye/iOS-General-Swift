@@ -14,12 +14,15 @@ import UIKit
     func keyboardHidingEventNotificationReceived(_ notification: Notification)
 }
 
+/// Alias of three vital animation parameters.
+public struct KeyboardAnimationParameters {
+    public var endFrame: CGRect
+    public var curve: UIView.AnimationOptions
+    public var duration: Double
+}
+
 /// Check out `SubscriberProtocolSpec.md` for detail.
 protocol KeyboardEventSubscriberProtocol: KeyboardEventSubscriberProtocolOBJC {
-
-    /// Alias of three vital animation parameters.
-    typealias KeyboardAnimationParameters
-        = (endFrame: CGRect, curve: UIView.AnimationOptions, duration: Double)
 
     func beginObservingKeyboardEvents()
 
@@ -74,6 +77,8 @@ extension KeyboardEventSubscriberProtocol {
             return nil
         }
         let curve = UIView.AnimationOptions(rawValue: curveRawValue.uintValue<<16)
-        return (endFrame, curve, duration)
+        return KeyboardAnimationParameters(endFrame: endFrame,
+                                           curve: curve,
+                                           duration: duration)
     }
 }

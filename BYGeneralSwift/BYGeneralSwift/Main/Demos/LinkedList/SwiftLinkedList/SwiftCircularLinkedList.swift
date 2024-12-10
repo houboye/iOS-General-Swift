@@ -7,6 +7,6 @@
 
 import Foundation
 
-class SwiftCircularLinkedList<E> where E: Equatable {
+class SwiftCircularLinkedList<Item> where Item: Equatable {
 
 }
