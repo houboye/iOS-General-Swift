@@ -17,7 +17,8 @@ class DemosViewController: BaseViewController {
             DemoItem(title: "VPN", demoType: .VPN),
             DemoItem(title: "LinkList", demoType: .linkedList),
             DemoItem(title: "Promise Kit", demoType: .promiseKit),
-            DemoItem(title: "Formatter", demoType: .format)
+            DemoItem(title: "Formatter", demoType: .format),
+            DemoItem(title: "Scan", demoType: .Scan)
         ]
     }()
 

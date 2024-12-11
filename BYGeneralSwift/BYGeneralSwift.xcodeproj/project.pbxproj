@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EA698552D09962F001DA99A /* BYPHCardScanQrHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6984E2D09962E001DA99A /* BYPHCardScanQrHandler.swift */; };
+		1EA698562D09962F001DA99A /* BYPHCardScanQrHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6984E2D09962E001DA99A /* BYPHCardScanQrHandler.swift */; };
+		1EA698572D09962F001DA99A /* BYPHCardScanQrHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6984E2D09962E001DA99A /* BYPHCardScanQrHandler.swift */; };
+		1EA698582D09962F001DA99A /* BYScanQrCoverViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6984F2D09962F001DA99A /* BYScanQrCoverViewProtocol.swift */; };
+		1EA698592D09962F001DA99A /* BYScanQrCoverViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6984F2D09962F001DA99A /* BYScanQrCoverViewProtocol.swift */; };
+		1EA6985A2D09962F001DA99A /* BYScanQrCoverViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6984F2D09962F001DA99A /* BYScanQrCoverViewProtocol.swift */; };
+		1EA6985B2D09962F001DA99A /* BYScanQrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698502D09962F001DA99A /* BYScanQrViewController.swift */; };
+		1EA6985C2D09962F001DA99A /* BYScanQrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698502D09962F001DA99A /* BYScanQrViewController.swift */; };
+		1EA6985D2D09962F001DA99A /* BYScanQrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698502D09962F001DA99A /* BYScanQrViewController.swift */; };
+		1EA6985E2D09962F001DA99A /* BYScanQrService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698512D09962F001DA99A /* BYScanQrService.swift */; };
+		1EA6985F2D09962F001DA99A /* BYScanQrService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698512D09962F001DA99A /* BYScanQrService.swift */; };
+		1EA698602D09962F001DA99A /* BYScanQrService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698512D09962F001DA99A /* BYScanQrService.swift */; };
+		1EA698612D09962F001DA99A /* BYScanQrHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698522D09962F001DA99A /* BYScanQrHandlerProtocol.swift */; };
+		1EA698622D09962F001DA99A /* BYScanQrHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698522D09962F001DA99A /* BYScanQrHandlerProtocol.swift */; };
+		1EA698632D09962F001DA99A /* BYScanQrHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698522D09962F001DA99A /* BYScanQrHandlerProtocol.swift */; };
+		1EA698642D09962F001DA99A /* BYPHCardScanQrCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698532D09962F001DA99A /* BYPHCardScanQrCoverView.swift */; };
+		1EA698652D09962F001DA99A /* BYPHCardScanQrCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698532D09962F001DA99A /* BYPHCardScanQrCoverView.swift */; };
+		1EA698662D09962F001DA99A /* BYPHCardScanQrCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698532D09962F001DA99A /* BYPHCardScanQrCoverView.swift */; };
+		1EA698672D09962F001DA99A /* BYScanQrUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698542D09962F001DA99A /* BYScanQrUtils.swift */; };
+		1EA698682D09962F001DA99A /* BYScanQrUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698542D09962F001DA99A /* BYScanQrUtils.swift */; };
+		1EA698692D09962F001DA99A /* BYScanQrUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698542D09962F001DA99A /* BYScanQrUtils.swift */; };
 		A226347D27632B1A00DF44A4 /* DemosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A226347C27632B1A00DF44A4 /* DemosTableViewCell.swift */; };
 		A226347F2763308400DF44A4 /* Snapkit+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = A226347E2763308400DF44A4 /* Snapkit+Public.swift */; };
 		A22634812763393E00DF44A4 /* DemoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22634802763393E00DF44A4 /* DemoItem.swift */; };
@@ -72,6 +93,13 @@
 
 /* Begin PBXFileReference section */
 		15FB3D57A9C610BCEEE7BDE7 /* Pods-BYGeneralSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BYGeneralSwift.release.xcconfig"; path = "Target Support Files/Pods-BYGeneralSwift/Pods-BYGeneralSwift.release.xcconfig"; sourceTree = "<group>"; };
+		1EA6984E2D09962E001DA99A /* BYPHCardScanQrHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYPHCardScanQrHandler.swift; sourceTree = "<group>"; };
+		1EA6984F2D09962F001DA99A /* BYScanQrCoverViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYScanQrCoverViewProtocol.swift; sourceTree = "<group>"; };
+		1EA698502D09962F001DA99A /* BYScanQrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYScanQrViewController.swift; sourceTree = "<group>"; };
+		1EA698512D09962F001DA99A /* BYScanQrService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYScanQrService.swift; sourceTree = "<group>"; };
+		1EA698522D09962F001DA99A /* BYScanQrHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYScanQrHandlerProtocol.swift; sourceTree = "<group>"; };
+		1EA698532D09962F001DA99A /* BYPHCardScanQrCoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYPHCardScanQrCoverView.swift; sourceTree = "<group>"; };
+		1EA698542D09962F001DA99A /* BYScanQrUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYScanQrUtils.swift; sourceTree = "<group>"; };
 		44793906F9573C957D5D16D3 /* Pods_BYGeneralSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BYGeneralSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A226347C27632B1A00DF44A4 /* DemosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemosTableViewCell.swift; sourceTree = "<group>"; };
 		A226347E2763308400DF44A4 /* Snapkit+Public.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Snapkit+Public.swift"; sourceTree = "<group>"; };
@@ -151,6 +179,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E91725B2D098CDE001F1022 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				1EA698532D09962F001DA99A /* BYPHCardScanQrCoverView.swift */,
+				1EA6984E2D09962E001DA99A /* BYPHCardScanQrHandler.swift */,
+				1EA6984F2D09962F001DA99A /* BYScanQrCoverViewProtocol.swift */,
+				1EA698522D09962F001DA99A /* BYScanQrHandlerProtocol.swift */,
+				1EA698512D09962F001DA99A /* BYScanQrService.swift */,
+				1EA698542D09962F001DA99A /* BYScanQrUtils.swift */,
+				1EA698502D09962F001DA99A /* BYScanQrViewController.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
 		491910BB8EECED5B01457E14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +377,7 @@
 		A2C291BD2760A3E600A0B5DB /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				1E91725B2D098CDE001F1022 /* Scan */,
 				A2C5149A289A7661008CB38C /* Formatters */,
 				A28A76D1288003670036101D /* PromiseKit */,
 				A273D2372852F45D002BF683 /* LinkedList */,
@@ -607,6 +650,7 @@
 			files = (
 				A22634812763393E00DF44A4 /* DemoItem.swift in Sources */,
 				A2C291C02760A57800A0B5DB /* DemosViewController.swift in Sources */,
+				1EA698582D09962F001DA99A /* BYScanQrCoverViewProtocol.swift in Sources */,
 				A28A76D32880037E0036101D /* PromiseKitViewController.swift in Sources */,
 				A273D2402852F61D002BF683 /* SwiftCircularLinkedList.swift in Sources */,
 				A273D2422852F77A002BF683 /* SwfitLinkedListProtocol.swift in Sources */,
@@ -614,6 +658,7 @@
 				A2960A6D27B0CFAB00EEC629 /* OffScreenRenderingCollectionCell.swift in Sources */,
 				A2C291A9275F646D00A0B5DB /* NavigationHandler.swift in Sources */,
 				A226347F2763308400DF44A4 /* Snapkit+Public.swift in Sources */,
+				1EA698552D09962F001DA99A /* BYPHCardScanQrHandler.swift in Sources */,
 				A22634832767224800DF44A4 /* DemosViewController+Handler.swift in Sources */,
 				A273D2392852F4B4002BF683 /* SwiftListNodeViewController.swift in Sources */,
 				A2C291C22760A59A00A0B5DB /* HomeViewController.swift in Sources */,
@@ -621,16 +666,21 @@
 				A2C291BC2760A38900A0B5DB /* RootViewController.swift in Sources */,
 				A2C77287276C7EDE003855A3 /* VPNViewController.swift in Sources */,
 				A2C514A2289A8164008CB38C /* CurrencyFormatViewController.swift in Sources */,
+				1EA698672D09962F001DA99A /* BYScanQrUtils.swift in Sources */,
 				A2C291A8275F646D00A0B5DB /* TimerHolder.swift in Sources */,
 				A2C291B0275F649A00A0B5DB /* ApplicationEventSubscriberProtocol.swift in Sources */,
 				A2C291AF275F649A00A0B5DB /* KeyboardEventObserverProtocol.swift in Sources */,
 				A2359A36275F0C2400F77A26 /* AppDelegate.swift in Sources */,
+				1EA698642D09962F001DA99A /* BYPHCardScanQrCoverView.swift in Sources */,
 				A2C291B4275F64C600A0B5DB /* BaseService.swift in Sources */,
+				1EA698612D09962F001DA99A /* BYScanQrHandlerProtocol.swift in Sources */,
 				A2359A38275F0C2400F77A26 /* SceneDelegate.swift in Sources */,
 				A2C5149C289A772E008CB38C /* FormatIndexViewController.swift in Sources */,
 				A2C514A0289A8158008CB38C /* NumberFormatViewController.swift in Sources */,
 				A273D2442852F818002BF683 /* SwiftLinkedListUtils.swift in Sources */,
+				1EA6985B2D09962F001DA99A /* BYScanQrViewController.swift in Sources */,
 				A2C291AA275F646D00A0B5DB /* Tools.swift in Sources */,
+				1EA6985E2D09962F001DA99A /* BYScanQrService.swift in Sources */,
 				A273D23E2852F5F8002BF683 /* SwiftDoublyLinkedList.swift in Sources */,
 				A226347D27632B1A00DF44A4 /* DemosTableViewCell.swift in Sources */,
 				A2C291AB275F646D00A0B5DB /* NavigationAnimator.swift in Sources */,
@@ -644,6 +694,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2359A50275F0C2600F77A26 /* BYGeneralSwiftTests.swift in Sources */,
+				1EA6985C2D09962F001DA99A /* BYScanQrViewController.swift in Sources */,
+				1EA698682D09962F001DA99A /* BYScanQrUtils.swift in Sources */,
+				1EA698562D09962F001DA99A /* BYPHCardScanQrHandler.swift in Sources */,
+				1EA698592D09962F001DA99A /* BYScanQrCoverViewProtocol.swift in Sources */,
+				1EA698652D09962F001DA99A /* BYPHCardScanQrCoverView.swift in Sources */,
+				1EA6985F2D09962F001DA99A /* BYScanQrService.swift in Sources */,
+				1EA698622D09962F001DA99A /* BYScanQrHandlerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,8 +708,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EA698692D09962F001DA99A /* BYScanQrUtils.swift in Sources */,
+				1EA698602D09962F001DA99A /* BYScanQrService.swift in Sources */,
+				1EA6985D2D09962F001DA99A /* BYScanQrViewController.swift in Sources */,
+				1EA698632D09962F001DA99A /* BYScanQrHandlerProtocol.swift in Sources */,
+				1EA698572D09962F001DA99A /* BYPHCardScanQrHandler.swift in Sources */,
+				1EA6985A2D09962F001DA99A /* BYScanQrCoverViewProtocol.swift in Sources */,
 				A2359A5C275F0C2600F77A26 /* BYGeneralSwiftUITestsLaunchTests.swift in Sources */,
 				A2359A5A275F0C2600F77A26 /* BYGeneralSwiftUITests.swift in Sources */,
+				1EA698662D09962F001DA99A /* BYPHCardScanQrCoverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -819,6 +883,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P948MCUQ2Y;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BYGeneralSwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -849,6 +914,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P948MCUQ2Y;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BYGeneralSwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -26,6 +26,11 @@ extension DemosViewController {
         case .format:
             let viewController = FormatIndexViewController()
             navigationController?.push(viewController: viewController)
+        case .Scan:
+            let c = BYPHCardScanQrCoverView()
+            let h = BYPHCardScanQrHandler()
+            let vc = BYScanQrViewController(coverView: c, handler: h)
+            navigationController?.push(viewController: vc)
         }
     }
 }

@@ -13,6 +13,7 @@ enum DemoType {
     case linkedList
     case promiseKit
     case format
+    case Scan
 }
 
 struct DemoItem {
