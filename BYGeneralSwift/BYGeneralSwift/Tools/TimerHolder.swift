@@ -1,11 +1,11 @@
 import UIKit
 
 @objc
-protocol TimerHolderDelegate {
+public protocol TimerHolderDelegate {
     func onTimerFired(_ holder: TimerHolder)
 }
 
-class TimerHolder: NSObject {
+public class TimerHolder: NSObject {
     @objc weak var timerDelegate: TimerHolderDelegate?
 
     @objc func startTimer(seconds: TimeInterval, delegate: TimerHolderDelegate, repeats: Bool) {

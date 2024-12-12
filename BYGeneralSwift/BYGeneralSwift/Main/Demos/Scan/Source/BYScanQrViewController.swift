@@ -8,12 +8,12 @@
 import UIKit
 import AVFoundation
 
-public class BYScanQrViewController: UIViewController, BYScanQrServiceDelegate {
-
+public class BYScanQrViewController: UIViewController, BYScanQrServiceDelegate, TimerHolderDelegate {
     private var coverView: BYScanQrCoverViewProtocol
     private var handler: BYScanQrHandlerProtocol
     private var indicator: BYScanQrIndicatorProtocol
     private var isStopWithResignActive = false
+    private let timerHolder = TimerHolder()
     private lazy var scanservice: BYScanQrService = {
         return BYScanQrService(delegate: self)
     }()
@@ -118,11 +118,19 @@ public class BYScanQrViewController: UIViewController, BYScanQrServiceDelegate {
     private func startScan() {
         coverView.onStartScan()
         self.scanservice.startScanCode()
+        timerHolder.startTimer(seconds: coverView.scanTimeout,
+                               delegate: self,
+                               repeats: false)
     }
 
     private func stopScan() {
         coverView.onStopScan()
         self.scanservice.stopScanCode()
+        timerHolder.stopTimer()
+    }
+
+    public func onTimerFired(_ holder: TimerHolder) {
+        coverView.onScanTimeout()
     }
 
     public func scanservice(barcode: BYScanQrService,
@@ -225,6 +233,7 @@ public class BYScanQrViewController: UIViewController, BYScanQrServiceDelegate {
     }
 
     deinit {
+        timerHolder.stopTimer()
         debugPrint("BYScanQrViewController deinit")
     }
 }
