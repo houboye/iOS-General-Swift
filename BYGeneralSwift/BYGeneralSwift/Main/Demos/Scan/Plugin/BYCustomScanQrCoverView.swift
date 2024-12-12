@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class BYPHCardScanQrCoverView: UIView,
+public class BYCustomScanQrCoverView: UIView,
                                       BYScanQrCoverViewProtocol {
     public var scanTimeout: TimeInterval {
         return 5

@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EA698552D09962F001DA99A /* BYPHCardScanQrHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6984E2D09962E001DA99A /* BYPHCardScanQrHandler.swift */; };
-		1EA698562D09962F001DA99A /* BYPHCardScanQrHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6984E2D09962E001DA99A /* BYPHCardScanQrHandler.swift */; };
-		1EA698572D09962F001DA99A /* BYPHCardScanQrHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6984E2D09962E001DA99A /* BYPHCardScanQrHandler.swift */; };
+		1E0B34632D0AC3410014C1BF /* BYScanQrIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0B34622D0AC3410014C1BF /* BYScanQrIndicatorProtocol.swift */; };
+		1E0B34652D0AC6770014C1BF /* BYCustomScanQrIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0B34642D0AC6770014C1BF /* BYCustomScanQrIndicator.swift */; };
+		1EA698552D09962F001DA99A /* BYCustomScanQrHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6984E2D09962E001DA99A /* BYCustomScanQrHandler.swift */; };
+		1EA698562D09962F001DA99A /* BYCustomScanQrHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6984E2D09962E001DA99A /* BYCustomScanQrHandler.swift */; };
+		1EA698572D09962F001DA99A /* BYCustomScanQrHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6984E2D09962E001DA99A /* BYCustomScanQrHandler.swift */; };
 		1EA698582D09962F001DA99A /* BYScanQrCoverViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6984F2D09962F001DA99A /* BYScanQrCoverViewProtocol.swift */; };
 		1EA698592D09962F001DA99A /* BYScanQrCoverViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6984F2D09962F001DA99A /* BYScanQrCoverViewProtocol.swift */; };
 		1EA6985A2D09962F001DA99A /* BYScanQrCoverViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6984F2D09962F001DA99A /* BYScanQrCoverViewProtocol.swift */; };
@@ -22,9 +24,9 @@
 		1EA698612D09962F001DA99A /* BYScanQrHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698522D09962F001DA99A /* BYScanQrHandlerProtocol.swift */; };
 		1EA698622D09962F001DA99A /* BYScanQrHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698522D09962F001DA99A /* BYScanQrHandlerProtocol.swift */; };
 		1EA698632D09962F001DA99A /* BYScanQrHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698522D09962F001DA99A /* BYScanQrHandlerProtocol.swift */; };
-		1EA698642D09962F001DA99A /* BYPHCardScanQrCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698532D09962F001DA99A /* BYPHCardScanQrCoverView.swift */; };
-		1EA698652D09962F001DA99A /* BYPHCardScanQrCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698532D09962F001DA99A /* BYPHCardScanQrCoverView.swift */; };
-		1EA698662D09962F001DA99A /* BYPHCardScanQrCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698532D09962F001DA99A /* BYPHCardScanQrCoverView.swift */; };
+		1EA698642D09962F001DA99A /* BYCustomScanQrCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698532D09962F001DA99A /* BYCustomScanQrCoverView.swift */; };
+		1EA698652D09962F001DA99A /* BYCustomScanQrCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698532D09962F001DA99A /* BYCustomScanQrCoverView.swift */; };
+		1EA698662D09962F001DA99A /* BYCustomScanQrCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698532D09962F001DA99A /* BYCustomScanQrCoverView.swift */; };
 		1EA698672D09962F001DA99A /* BYScanQrUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698542D09962F001DA99A /* BYScanQrUtils.swift */; };
 		1EA698682D09962F001DA99A /* BYScanQrUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698542D09962F001DA99A /* BYScanQrUtils.swift */; };
 		1EA698692D09962F001DA99A /* BYScanQrUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA698542D09962F001DA99A /* BYScanQrUtils.swift */; };
@@ -93,12 +95,14 @@
 
 /* Begin PBXFileReference section */
 		15FB3D57A9C610BCEEE7BDE7 /* Pods-BYGeneralSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BYGeneralSwift.release.xcconfig"; path = "Target Support Files/Pods-BYGeneralSwift/Pods-BYGeneralSwift.release.xcconfig"; sourceTree = "<group>"; };
-		1EA6984E2D09962E001DA99A /* BYPHCardScanQrHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYPHCardScanQrHandler.swift; sourceTree = "<group>"; };
+		1E0B34622D0AC3410014C1BF /* BYScanQrIndicatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYScanQrIndicatorProtocol.swift; sourceTree = "<group>"; };
+		1E0B34642D0AC6770014C1BF /* BYCustomScanQrIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYCustomScanQrIndicator.swift; sourceTree = "<group>"; };
+		1EA6984E2D09962E001DA99A /* BYCustomScanQrHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYCustomScanQrHandler.swift; sourceTree = "<group>"; };
 		1EA6984F2D09962F001DA99A /* BYScanQrCoverViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYScanQrCoverViewProtocol.swift; sourceTree = "<group>"; };
 		1EA698502D09962F001DA99A /* BYScanQrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYScanQrViewController.swift; sourceTree = "<group>"; };
 		1EA698512D09962F001DA99A /* BYScanQrService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYScanQrService.swift; sourceTree = "<group>"; };
 		1EA698522D09962F001DA99A /* BYScanQrHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYScanQrHandlerProtocol.swift; sourceTree = "<group>"; };
-		1EA698532D09962F001DA99A /* BYPHCardScanQrCoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYPHCardScanQrCoverView.swift; sourceTree = "<group>"; };
+		1EA698532D09962F001DA99A /* BYCustomScanQrCoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYCustomScanQrCoverView.swift; sourceTree = "<group>"; };
 		1EA698542D09962F001DA99A /* BYScanQrUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYScanQrUtils.swift; sourceTree = "<group>"; };
 		44793906F9573C957D5D16D3 /* Pods_BYGeneralSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BYGeneralSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A226347C27632B1A00DF44A4 /* DemosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemosTableViewCell.swift; sourceTree = "<group>"; };
@@ -179,16 +183,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E91725B2D098CDE001F1022 /* Scan */ = {
+		1E0B34602D0AC0980014C1BF /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				1EA698532D09962F001DA99A /* BYPHCardScanQrCoverView.swift */,
-				1EA6984E2D09962E001DA99A /* BYPHCardScanQrHandler.swift */,
 				1EA6984F2D09962F001DA99A /* BYScanQrCoverViewProtocol.swift */,
 				1EA698522D09962F001DA99A /* BYScanQrHandlerProtocol.swift */,
 				1EA698512D09962F001DA99A /* BYScanQrService.swift */,
 				1EA698542D09962F001DA99A /* BYScanQrUtils.swift */,
 				1EA698502D09962F001DA99A /* BYScanQrViewController.swift */,
+				1E0B34622D0AC3410014C1BF /* BYScanQrIndicatorProtocol.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1E0B34612D0AC0A30014C1BF /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				1EA698532D09962F001DA99A /* BYCustomScanQrCoverView.swift */,
+				1EA6984E2D09962E001DA99A /* BYCustomScanQrHandler.swift */,
+				1E0B34642D0AC6770014C1BF /* BYCustomScanQrIndicator.swift */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		1E91725B2D098CDE001F1022 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				1E0B34612D0AC0A30014C1BF /* Plugin */,
+				1E0B34602D0AC0980014C1BF /* Source */,
 			);
 			path = Scan;
 			sourceTree = "<group>";
@@ -658,7 +680,7 @@
 				A2960A6D27B0CFAB00EEC629 /* OffScreenRenderingCollectionCell.swift in Sources */,
 				A2C291A9275F646D00A0B5DB /* NavigationHandler.swift in Sources */,
 				A226347F2763308400DF44A4 /* Snapkit+Public.swift in Sources */,
-				1EA698552D09962F001DA99A /* BYPHCardScanQrHandler.swift in Sources */,
+				1EA698552D09962F001DA99A /* BYCustomScanQrHandler.swift in Sources */,
 				A22634832767224800DF44A4 /* DemosViewController+Handler.swift in Sources */,
 				A273D2392852F4B4002BF683 /* SwiftListNodeViewController.swift in Sources */,
 				A2C291C22760A59A00A0B5DB /* HomeViewController.swift in Sources */,
@@ -667,11 +689,12 @@
 				A2C77287276C7EDE003855A3 /* VPNViewController.swift in Sources */,
 				A2C514A2289A8164008CB38C /* CurrencyFormatViewController.swift in Sources */,
 				1EA698672D09962F001DA99A /* BYScanQrUtils.swift in Sources */,
+				1E0B34632D0AC3410014C1BF /* BYScanQrIndicatorProtocol.swift in Sources */,
 				A2C291A8275F646D00A0B5DB /* TimerHolder.swift in Sources */,
 				A2C291B0275F649A00A0B5DB /* ApplicationEventSubscriberProtocol.swift in Sources */,
 				A2C291AF275F649A00A0B5DB /* KeyboardEventObserverProtocol.swift in Sources */,
 				A2359A36275F0C2400F77A26 /* AppDelegate.swift in Sources */,
-				1EA698642D09962F001DA99A /* BYPHCardScanQrCoverView.swift in Sources */,
+				1EA698642D09962F001DA99A /* BYCustomScanQrCoverView.swift in Sources */,
 				A2C291B4275F64C600A0B5DB /* BaseService.swift in Sources */,
 				1EA698612D09962F001DA99A /* BYScanQrHandlerProtocol.swift in Sources */,
 				A2359A38275F0C2400F77A26 /* SceneDelegate.swift in Sources */,
@@ -682,6 +705,7 @@
 				A2C291AA275F646D00A0B5DB /* Tools.swift in Sources */,
 				1EA6985E2D09962F001DA99A /* BYScanQrService.swift in Sources */,
 				A273D23E2852F5F8002BF683 /* SwiftDoublyLinkedList.swift in Sources */,
+				1E0B34652D0AC6770014C1BF /* BYCustomScanQrIndicator.swift in Sources */,
 				A226347D27632B1A00DF44A4 /* DemosTableViewCell.swift in Sources */,
 				A2C291AB275F646D00A0B5DB /* NavigationAnimator.swift in Sources */,
 				A22634862767231E00DF44A4 /* OffScreenRenderingViewController.swift in Sources */,
@@ -696,9 +720,9 @@
 				A2359A50275F0C2600F77A26 /* BYGeneralSwiftTests.swift in Sources */,
 				1EA6985C2D09962F001DA99A /* BYScanQrViewController.swift in Sources */,
 				1EA698682D09962F001DA99A /* BYScanQrUtils.swift in Sources */,
-				1EA698562D09962F001DA99A /* BYPHCardScanQrHandler.swift in Sources */,
+				1EA698562D09962F001DA99A /* BYCustomScanQrHandler.swift in Sources */,
 				1EA698592D09962F001DA99A /* BYScanQrCoverViewProtocol.swift in Sources */,
-				1EA698652D09962F001DA99A /* BYPHCardScanQrCoverView.swift in Sources */,
+				1EA698652D09962F001DA99A /* BYCustomScanQrCoverView.swift in Sources */,
 				1EA6985F2D09962F001DA99A /* BYScanQrService.swift in Sources */,
 				1EA698622D09962F001DA99A /* BYScanQrHandlerProtocol.swift in Sources */,
 			);
@@ -712,11 +736,11 @@
 				1EA698602D09962F001DA99A /* BYScanQrService.swift in Sources */,
 				1EA6985D2D09962F001DA99A /* BYScanQrViewController.swift in Sources */,
 				1EA698632D09962F001DA99A /* BYScanQrHandlerProtocol.swift in Sources */,
-				1EA698572D09962F001DA99A /* BYPHCardScanQrHandler.swift in Sources */,
+				1EA698572D09962F001DA99A /* BYCustomScanQrHandler.swift in Sources */,
 				1EA6985A2D09962F001DA99A /* BYScanQrCoverViewProtocol.swift in Sources */,
 				A2359A5C275F0C2600F77A26 /* BYGeneralSwiftUITestsLaunchTests.swift in Sources */,
 				A2359A5A275F0C2600F77A26 /* BYGeneralSwiftUITests.swift in Sources */,
-				1EA698662D09962F001DA99A /* BYPHCardScanQrCoverView.swift in Sources */,
+				1EA698662D09962F001DA99A /* BYCustomScanQrCoverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

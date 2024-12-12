@@ -12,15 +12,18 @@ public class BYScanQrViewController: UIViewController, BYScanQrServiceDelegate {
 
     private var coverView: BYScanQrCoverViewProtocol
     private var handler: BYScanQrHandlerProtocol
+    private var indicator: BYScanQrIndicatorProtocol
     private var isStopWithResignActive = false
     private lazy var scanservice: BYScanQrService = {
         return BYScanQrService(delegate: self)
     }()
 
     public init(coverView: BYScanQrCoverViewProtocol,
-                handler: BYScanQrHandlerProtocol) {
+                handler: BYScanQrHandlerProtocol,
+                indicator: BYScanQrIndicatorProtocol) {
         self.coverView = coverView
         self.handler = handler
+        self.indicator = indicator
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -41,7 +44,8 @@ public class BYScanQrViewController: UIViewController, BYScanQrServiceDelegate {
             if grant {
                 self.configScanView()
             } else {
-                BYScanQrUtils.promptUserDeviceAuth(self)
+                BYScanQrUtils.promptUserDeviceAuth(self,
+                                                   indicator: self.indicator)
             }
         })
     }
@@ -58,20 +62,14 @@ public class BYScanQrViewController: UIViewController, BYScanQrServiceDelegate {
     }
 
     private func setupHnadler() {
-        handler.showLoading = { [weak self] in
+        handler.triggerStartScan = { [weak self] in
             guard let self = self else { return }
+            self.startScan()
         }
 
-        handler.dismissLoading = { [weak self] in
+        handler.triggerStopScan = { [weak self] in
             guard let self = self else { return }
-        }
-
-        handler.toastError = { [weak self] errorMessage in
-            guard let self = self else { return }
-        }
-
-        handler.showErrorAlert = { [weak self] errorMessage in
-            guard let self = self else { return }
+            self.stopScan()
         }
     }
 
@@ -129,7 +127,9 @@ public class BYScanQrViewController: UIViewController, BYScanQrServiceDelegate {
 
     public func scanservice(barcode: BYScanQrService,
                             scanValue value: String) {
-        handler.onScanValue(value, context: self)
+        handler.onScanValue(value,
+                            context: self,
+                            indicator: self.indicator)
         self.stopScan()
     }
 
@@ -213,15 +213,15 @@ public class BYScanQrViewController: UIViewController, BYScanQrServiceDelegate {
     }
 
     // 用于提示一些系统级别的错误信息
-    func showAlertErrorMessage(_ errorMessage: String) {
-        let alert = UIAlertController(title: errorMessage, message: nil, preferredStyle: .alert)
-
-        let action = UIAlertAction(title: "OK", style: .cancel) { [weak self] _ in
+    private func showAlertErrorMessage(_ errorMessage: String) {
+        let aciton = BYScanQrIndicatorAclertAction(title: "OK") { [weak self] in
             guard let self = self else { return }
             self.startScan()
         }
-        alert.addAction(action)
-        present(alert, animated: true)
+        self.indicator.onShowAlert(self,
+                                   title: "Error",
+                                   message: errorMessage,
+                                   actions: [aciton])
     }
 
     deinit {

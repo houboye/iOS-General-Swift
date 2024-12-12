@@ -8,6 +8,7 @@ PODS:
     - Moya/Core (= 15.0.0)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
+  - PKHUD (5.3.0)
   - PromiseKit (6.17.1):
     - PromiseKit/CorePromise (= 6.17.1)
     - PromiseKit/Foundation (= 6.17.1)
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - GeneralTools (from `../GeneralTools`)
   - LTMorphingLabel
   - Moya (~> 15.0)
+  - PKHUD (~> 5.0)
   - PromiseKit
   - SnapKit (~> 5.0.0)
   - SwiftFormatter (from `../SwiftFormatter`)
@@ -38,6 +40,7 @@ SPEC REPOS:
     - Alamofire
     - LTMorphingLabel
     - Moya
+    - PKHUD
     - PromiseKit
     - SnapKit
     - SwiftSoup
@@ -57,12 +60,13 @@ SPEC CHECKSUMS:
   GeneralTools: ca31cc556f8621773801e2a11575e79be33f02bb
   LTMorphingLabel: f2b256e4fe665aac27f0d0e8ccdcd79590f0cd70
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   PromiseKit: ee485df3d4dc570594d7e7aecae6352697dc6a4c
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftFormatter: 7abc07be43d7bc636e49d04d28552e00397b9ab4
   SwiftSoup: 7589ceac3b38cef742a96981cfe2b14ba55ce1e3
   SwiftState: 5696580d3b91656d1c67773ca5c6d5e51610c711
 
-PODFILE CHECKSUM: 36aa76f0bf31a66df1c8f443c4835558614b2b26
+PODFILE CHECKSUM: 7ed1cd1e7a27e1ec7a95c19bfee2686132c66def
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

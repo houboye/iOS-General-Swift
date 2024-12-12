@@ -27,9 +27,11 @@ extension DemosViewController {
             let viewController = FormatIndexViewController()
             navigationController?.push(viewController: viewController)
         case .Scan:
-            let c = BYPHCardScanQrCoverView()
-            let h = BYPHCardScanQrHandler()
-            let vc = BYScanQrViewController(coverView: c, handler: h)
+            let c = BYCustomScanQrCoverView()
+            let h = BYCustomScanQrHandler()
+            let i = BYCustomScanQrIndicator()
+            let vc = BYScanQrViewController(coverView: c,
+                                            handler: h, indicator: i)
             navigationController?.push(viewController: vc)
         }
     }

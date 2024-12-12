@@ -11,6 +11,7 @@ target 'BYGeneralSwift' do
     pod 'SwiftSoup'
     pod "PromiseKit"
     pod 'LTMorphingLabel'
+    pod 'PKHUD', '~> 5.0'
     
     pod "GeneralTools", :path => "../GeneralTools"
     pod "BaseControllers", :path => "../BaseControllers"
